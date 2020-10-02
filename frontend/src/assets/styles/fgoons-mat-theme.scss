@@ -1,0 +1,72 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+@import 'fgoons-mat-palette';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+
+// Use lines 11 through 30 to include a custom material typography config.
+
+$typography: mat-typography-config(
+    $font-family: 'Open Sans, sans-serif',
+
+    $display-4:     mat-typography-level(112px, 112px, 500),
+    $display-3:     mat-typography-level(56px, 56px, 500),
+    $display-2:     mat-typography-level(45px, 48px, 500),
+    $display-1:     mat-typography-level(34px, 40px, 500),
+    $headline:      mat-typography-level(44px, 60px, 600),
+    $title:         mat-typography-level(34px, 34px, 400),
+    $subheading-2:  mat-typography-level(20px, 32px, 400),
+    $subheading-1:  mat-typography-level(16px, 24px, 400),
+    $body-2:        mat-typography-level(14px, 24px, 400),
+    $body-1:        mat-typography-level(16px, 24px, 400),
+    $caption:       mat-typography-level(12px, 20px, 400),
+    $button:        mat-typography-level(16px, 16px, 600),
+
+    $input:         mat-typography-level(16px, 1.25, 500)
+); 
+
+@include mat-core($typography);
+
+// @include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Hackathon2020-primary: mat-palette($mat-fgoons-blue, 400, 300, 600);
+$Hackathon2020-accent: mat-palette($mat-diverging-blue, 300, 100, 500);
+// The warn palette is optional (defaults to red).
+$Hackathon2020-warn: mat-palette($mat-diverging-red, 400, 200, 600);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Hackathon2020-theme: mat-light-theme((
+  color: (
+    primary: $Hackathon2020-primary,
+    accent: $Hackathon2020-accent,
+    warn: $Hackathon2020-warn
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Hackathon2020-theme);
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-dark: #{mat-color($Hackathon2020-primary, darker)};
+  --primary-light: #(mat-color($Hackathon2020-primary), lighter);
+  --accent-dark: #{mat-color($Hackathon2020-accent, darker)};
+  --accent-light: #(mat-color($Hackathon2020-accent), lighter);
+  --warn-dark: #{mat-color($Hackathon2020-warn, darker)};
+  --warn-light: #(mat-color($Hackathon2020-warn), lighter);
+}
+
+html, body { height: 100%; }
+// body { margin: 0; font-family: "OpenSans", "semi-bold", sans-serif; }
+  
