@@ -1,6 +1,6 @@
 # Fauci's Goons Hackathon App
 
-## This application is designed to run on AWS's Elastic Beanstalk service. Node.js is used to run an Express application which can serve the frontend static files as well as API endpoints if needed. The Gulp library is used to build the Angular application and pair it with the backend files into a build folder. 
+This application is designed to run on AWS's Elastic Beanstalk service. Node.js is used to run an Express application which can serve the frontend static files as well as API endpoints if needed. The Gulp library is used to build the Angular application and pair it with the backend files into a build folder. 
 
 
 # Prerequisites:
