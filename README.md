@@ -1,9 +1,9 @@
-#Fauci's Goons Hackathon App
+# Fauci's Goons Hackathon App
 
-##This application is designed to run on AWS's Elastic Beanstalk service. Node.js is used to run an Express application which can serve the frontend static files as well as API endpoints if needed. The Gulp library is used to build the Angular application and pair it with the backend files into a build folder. 
+## This application is designed to run on AWS's Elastic Beanstalk service. Node.js is used to run an Express application which can serve the frontend static files as well as API endpoints if needed. The Gulp library is used to build the Angular application and pair it with the backend files into a build folder. 
 
 
-#Prerequisites:
+# Prerequisites:
 ## Prerequisites to run locally 
 Node.js latest stable version (v12): https://nodejs.org/en/download/
 NPM (comes with Node.js)
@@ -13,7 +13,7 @@ AWS CLI: https://aws.amazon.com/cli/
 Elasic Beanstalk CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
 
 
-##Getting Started Locally:
+## Getting Started Locally:
 
 1) Copy and rename the sample.env to .env and in this file, set the "ENV" value to the environment you wish to deploying to 
 
@@ -36,7 +36,7 @@ Elasic Beanstalk CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-
 9) Using your browser, navigate to "localhost:8080". You should see the application's landing page
 
 
-##Deploying to Elastic Beanstalk:
+## Deploying to Elastic Beanstalk:
 
 There are 2 ways to deploy the application to an environment in Elastic Beanstalk at this point.
 
