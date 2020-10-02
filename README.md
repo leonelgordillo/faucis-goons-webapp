@@ -5,12 +5,14 @@ This application is designed to run on AWS's Elastic Beanstalk service. Node.js 
 
 # Prerequisites:
 ## Prerequisites to run locally 
-Node.js latest stable version (v12): https://nodejs.org/en/download/\
-NPM (comes with Node.js)
+- Node.js latest stable version (v12): https://nodejs.org/en/download/
+
+- NPM (comes with Node.js)
 
 ## Prerequisites to deploy to AWS
-AWS CLI: https://aws.amazon.com/cli/\
-Elasic Beanstalk CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
+- AWS CLI: https://aws.amazon.com/cli/
+
+- Elasic Beanstalk CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
 
 
 ## Getting Started Locally:
