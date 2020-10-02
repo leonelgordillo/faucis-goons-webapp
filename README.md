@@ -3,10 +3,12 @@
 ##This application is designed to run on AWS's Elastic Beanstalk service. Node.js is used to run an Express application which can serve the frontend static files as well as API endpoints if needed. The Gulp library is used to build the Angular application and pair it with the backend files into a build folder. 
 
 
-##Prerequisites:
-
+#Prerequisites:
+## Prerequisites to run locally 
 Node.js latest stable version (v12): https://nodejs.org/en/download/
 NPM (comes with Node.js)
+
+## Prerequisites to deploy to AWS
 AWS CLI: https://aws.amazon.com/cli/
 Elasic Beanstalk CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-windows.html
 
