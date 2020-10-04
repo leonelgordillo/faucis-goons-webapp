@@ -8,12 +8,12 @@ image: atlassian/default-image:2
 pipelines:
   branches:
          dev:
-        - step:
-          script:
-            - cp sample.env .env
-            - npm install
-            - npm install -g gulp
-            - cd frontend
-            - npm install
-            - cd ..
-            - gulp
+           - step:
+             script:
+               - cp sample.env .env
+               - npm install
+               - npm install -g gulp
+               - cd frontend
+               - npm install
+               - cd ..
+               - gulp
