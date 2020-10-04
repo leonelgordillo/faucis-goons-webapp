@@ -9,7 +9,7 @@ pipelines:
   branches:
          dev:
            - step:
-             script:
+              script:
                - cp sample.env .env
                - npm install
                - npm install -g gulp
