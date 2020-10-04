@@ -11,9 +11,9 @@ pipelines:
            - step:
               script:
                - cp sample.env .env
+               - rm -rf node_modules builds/*
                - npm install
                - cd frontend
                - npm install
                - cd ..
-                 npm install gulp-cli
-               - gulp
+               - gulp --cwd ./
