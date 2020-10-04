@@ -16,4 +16,4 @@ pipelines:
                - cd frontend
                - npm install
                - cd ..
-               - gulp
+               - gulp --cwd ./
