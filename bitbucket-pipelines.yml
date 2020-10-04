@@ -9,4 +9,4 @@ pipelines:
   default:
     - step:
         script:
-          - copy sample.env .env
+          - cp sample.env .env
