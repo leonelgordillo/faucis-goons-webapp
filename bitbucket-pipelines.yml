@@ -7,8 +7,8 @@ image: atlassian/default-image:2
 
 pipelines:
   branches:
-       dev:
-      - step:
+         dev:
+        - step:
           script:
             - cp sample.env .env
             - npm install
