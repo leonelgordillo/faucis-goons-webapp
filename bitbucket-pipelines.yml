@@ -17,4 +17,4 @@ pipelines:
                - npm install
                - cd ..
                - npm install --global gulp
-               - gulp --cwd ./
+               - gulp --gulpfile ./gulpfile.js
