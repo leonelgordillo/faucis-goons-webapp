@@ -16,4 +16,5 @@ pipelines:
                - cd frontend
                - npm install
                - cd ..
-               - ./node_modules/.bin/gulp --gulpfile ./gulpfile.js
+               - npm install --save-dev gulp
+               - ./node_modules/.bin/gulp
