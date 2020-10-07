@@ -7,10 +7,10 @@ const app = express(),
 
 
 app.use(bodyParser.json());
-app.use(express.static(process.cwd()+`/../dist/Hackathon2020/`));
+app.use(express.static(process.cwd()+`/dist/Hackathon2020/`));
 
 app.get('/', (req,res) => {
-  res.sendFile(process.cwd()+`/../dist/Hackathon2020/index.html`)
+  res.sendFile(process.cwd()+`/dist/Hackathon2020/index.html`)
 });
 
 app.listen(port, () => {

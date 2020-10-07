@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-3 filter-elements">
+                    <span style="padding-bottom:10px">Mobility Type</span>
+                    <div class="mobility-buttons">
+                        <mat-button-toggle-group #group="matButtonToggleGroup" (change)="metricChange(false)"
+                            [(ngModel)]="metric">
+                            <mat-button-toggle value="all" ngDefaultControl>All</mat-button-toggle>
+                            <mat-button-toggle value="driving" ngDefaultControl selected>Driving</mat-button-toggle>
+                            <mat-button-toggle value="transit" ngDefaultControl>Transit</mat-button-toggle>
+                            <mat-button-toggle value="walking" ngDefaultControl>Walking</mat-button-toggle>
+                        </mat-button-toggle-group>
+                    </div>
+
+                    <div class="time-slider">
+                        <span>Time Series</span>
+                        <div class="slider-group">
+                            <button (click)="updateSlider('decrement')" mat-button color="primary">
+                                <mat-icon>arrow_left</mat-icon>
+                            </button>
+                            <mat-slider class="slider" #slider (change)="valueChange($event)"
+                                (input)="valueChange($event)" [step]="sliderStep" [min]="sliderMin" [max]="sliderMax"
+                                [(ngModel)]="sliderValue">
+                            </mat-slider>
+                            <button (click)="updateSlider('increment')" mat-button color="primary">
+                                <mat-icon>arrow_right</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            <svg>
+            </svg>
+        </div>
+    </div>
+</div>
