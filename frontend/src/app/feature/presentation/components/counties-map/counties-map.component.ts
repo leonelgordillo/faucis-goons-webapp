@@ -1,7 +1,6 @@
 // import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-import * as coviddata from "../../data/counties-historical.json";
-import * as mobilitydata from "../../data/apple-mobility-tx-counties-with-fips.json";
+import * as mobilitydata from "../../data/apple-mobility-tx-counties-with-fips-with-all.json";
 import countiesdata from "../../data/counties.json";
 
 
@@ -91,13 +90,13 @@ export class CountiesMapComponent implements OnInit {
   end;
 
   // May be the only scale we need? Find scale that works best with this relative mobility data
-  scale = "Logarithmic";
+  scale = "Linear";
   type = "Filled";
 
   // metric = "Transit", "Driving", "Walking", "Aggregate"
   metric: string = "all";
   date;
-  dateMin = "2020-01-21";
+  dateMin = "2020-01-18";
   dateMax;
   tab = "Totals"
 
@@ -111,12 +110,6 @@ export class CountiesMapComponent implements OnInit {
   colorScaleSqrt;
 
   public scaleButtons = ["Sqrrt", "Linear", "Exponential", "Logarithmic"]
-
-  public typeButtons = [
-    { text: "Filled", selected: true },
-    { text: "Bubble" }
-  ];
-
 
   // May not be needed
   private _routerSub = Subscription.EMPTY;
@@ -158,44 +151,10 @@ export class CountiesMapComponent implements OnInit {
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.route.params.subscribe(params => {
-        // this.selectedState = this.route.snapshot.params['selectedState'];
-        // if (this.route.snapshot.params['selectedType']) {
-        //   var button = this.typeButtons.find(({ text }) => text === this.type);
-        //   button.selected = false;
-        //   this.type = this.route.snapshot.params['selectedType'];
-        //   var button = this.typeButtons.find(({ text }) => text === this.type);
-        //   button.selected = true;
-        // }
-
-        // if (this.route.snapshot.params['selectedScale']) {
-        //   this.scale = this.route.snapshot.params['selectedScale'];
-        // }
-
-        // if (this.route.snapshot.params['selectedTab']) {
-        //   this.tab = this.route.snapshot.params['selectedTab'];
-        // }
-
-        // if (this.route.snapshot.params['selectedMetric']) {
-        //   this.metric = this.route.snapshot.params['selectedMetric'];
-        // }
-
-        // if (this.route.snapshot.params['selectedDate']) {
-        //   this.date = this.route.snapshot.params['selectedDate'];
-        //   var value = new Date(this.date);
-        //   value.setHours(23, 59, 59, 999);
-        //   this.value = value.getTime();
-        //   this.slider.value = value.getTime();
-        // }
-        // else {
-        //   this.date = formatDate(new Date().setDate(new Date().getDate() - 1), 'yyyy-MM-dd', 'en');
-        // }
-
-        // if (this.router.url.indexOf('/counties') != -1) {
         if (this.router.url.indexOf('/') != -1) {
           this.removeExistingMapFromParent();
           // this.updateMap(true);
         }
-
       })
     })
   }
@@ -268,9 +227,9 @@ export class CountiesMapComponent implements OnInit {
 
     // default to end date
     if (!that.date) {
-      that.date = that.dateMax;
+      that.date = that.dateMin;
       // that.slider.value = that.value
-      that.sliderValue = that.sliderMax;
+      that.sliderValue = that.sliderMin;
     }
 
     // Set date to max date if no data is available
@@ -288,7 +247,7 @@ export class CountiesMapComponent implements OnInit {
       return d.state === that.selectedState
     });
 
-    that.start = 80
+    that.start = 90;
 
     // Get data for max date
 
@@ -314,38 +273,17 @@ export class CountiesMapComponent implements OnInit {
           }
         })
         break;
-      case "Total Deaths":
-        that.end = d3.max(covidMax, function (d: any) {
-          return d.deaths;
-        })
+        case "all":
+          that.end = d3.max(covid, function (d: any) {
+            if (d.transportation_type == "driving") {
+              return d.relative_mobility
+            }
+          })
         break;
     }
 
-    // switch (that.metric) {
-    //   case "Daily Deaths":
-    //     that.end = d3.max(covid, function (d: any) {
-    //       return d.daily_deaths
-    //     })
-    //     break
-    //   case "Daily Cases":
-    //     that.end = d3.max(covid, function (d: any) {
-    //       return d.daily_cases;
-    //     })
-    //     break;
-    //   case "Total Cases":
-    //     that.end = d3.max(covidMax, function (d: any) {
-    //       return d.cases
-    //     })
-    //     break;
-    //   case "Total Deaths":
-    //     that.end = d3.max(covidMax, function (d: any) {
-    //       return d.deaths;
-    //     })
-    //     break;
-    // }
 
-
-    // Get covid date for current date
+    // Get covid mobility date for current date
     that.covid = that.covid.filter(function (d) {
       return d.date === that.date && d.state === that.selectedState && d.transportation_type === that.metric;
     });
@@ -376,20 +314,6 @@ export class CountiesMapComponent implements OnInit {
     that.merged = that.join(that.covid, that.counties, "fips", "fips", function (county, covid) {
 
       var metric;
-      // switch (that.metric) {
-      //   case "Total Cases":
-      //     metric = covid ? covid.cases : 0;
-      //     break;
-      //   case "Total Deaths":
-      //     metric = covid ? covid.deaths : 0;
-      //     break;
-      //   case "Daily Cases":
-      //     metric = covid ? covid.daily_cases : 0;
-      //     break;
-      //   case "Daily Deaths":
-      //     metric = covid ? covid.daily_deaths : 0;
-      //     break;
-      // }
 
       switch (that.metric) {
         case "walking":
@@ -408,7 +332,7 @@ export class CountiesMapComponent implements OnInit {
           }
           break;
         case "all":
-          metric = covid ? covid.daily_deaths : 0;
+          metric = covid ? covid.relative_mobility : 0;
           break;
       }
 
@@ -419,14 +343,6 @@ export class CountiesMapComponent implements OnInit {
         type: county.type,
         state: county.properties.state
       };
-
-      // return {
-      //   name: county.properties.name,
-      //   metric: metric,
-      //   geometry: county.geometry,
-      //   type: county.type,
-      //   state: county.properties.state
-      // };
     });
 
     // Sort for bubble overlays
@@ -438,7 +354,7 @@ export class CountiesMapComponent implements OnInit {
     switch (that.type) {
       case "Filled":
         that.linearScale = d3.scaleLinear()
-          .domain([that.start, that.end])
+          .domain([that.start, 175])
           .range([0, 1]);
         break;
       case "Bubble":
@@ -448,9 +364,29 @@ export class CountiesMapComponent implements OnInit {
         break;
     }
 
-    that.colorScaleLinear = d3.scaleSequential(d =>
-      d3.interpolateReds(that.linearScale(d))
-    );
+    switch (that.metric) {
+      case "all":
+        that.colorScaleLinear = d3.scaleSequential(d =>
+          d3.interpolateBlues(that.linearScale(d))
+        );
+      break;
+      case "driving":
+        that.colorScaleLinear = d3.scaleSequential(d =>
+          d3.interpolateOranges(that.linearScale(d))
+        );
+      break;
+      case "transit":
+        that.colorScaleLinear = d3.scaleSequential(d =>
+          d3.interpolateGreens(that.linearScale(d))
+        );
+      break;
+      case "walking":
+        that.colorScaleLinear = d3.scaleSequential(d =>
+          d3.interpolateReds(that.linearScale(d))
+        );
+      break;
+        
+    }
 
     // Exponential Scale
     switch (that.type) {
@@ -493,7 +429,7 @@ export class CountiesMapComponent implements OnInit {
     // Sqrt Scale
     switch (that.type) {
       case "Filled":
-        that.sqrtScale = d3.scaleSqrt().domain([that.start, that.end])
+        that.sqrtScale = d3.scaleSqrt().domain([that.start, 200])
           .range([.1, 1]);
         break;
       case "Bubble":
@@ -569,7 +505,7 @@ export class CountiesMapComponent implements OnInit {
           .duration(200)
           .style('opacity', .9);
 
-        that.tooltip.html(d.name + `<br/><b>TOTAL ` + that.metric + `:</b> ` + that.formatDecimal(d.metric))
+        that.tooltip.html(d.name + `<br/><b>Relative Mobility :</b> ` + that.formatDecimal(d.metric))
           .style('left', (d3.event.pageX) + 'px')
           .style('top', (d3.event.pageY) + 'px')
         // .style('left', (event.pageX) + 'px')
@@ -668,7 +604,7 @@ export class CountiesMapComponent implements OnInit {
               return that.colorScaleSqrt(that.sqrtScale.invert(d));
           }
         })
-        .style("opacity", 0.5)
+        .style("opacity", 0.9)
 
       // Adding text to legend
       legend
@@ -730,7 +666,7 @@ export class CountiesMapComponent implements OnInit {
       .attr("y", that.legendContainerSettings.y + 14)
       .style("font-size", 14)
       .style("font-weight", "bold")
-      .text(`Texas Mobility by ${this.metric} due to Covid-19`)
+      .text(`Texas Mobility by ${this.metric} during Covid-19 Pandemic`)
   }
 
   getMetrics(rangeValue) {
@@ -821,10 +757,24 @@ export class CountiesMapComponent implements OnInit {
   updateSlider(updateType) {
 
     if(updateType == "increment") {
-      this.sliderValue += 259200000;
+      let tempSliderValue = this.sliderValue + 86400000;
+      if (tempSliderValue > this.sliderMax) {
+        return;
+      }
+      else {
+        this.sliderValue += 86400000;
+        this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
+      }
     } 
     else {
-      this.sliderValue -= 259200000;
+      let tempSliderValue = this.sliderValue - 86400000;
+      if (tempSliderValue < this.sliderMin) {
+        return;
+      }
+      else {
+        this.sliderValue -= 86400000;
+        this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
+      }
     }
     this.removeExistingMapFromParent();
     this.updateMap(false);  
