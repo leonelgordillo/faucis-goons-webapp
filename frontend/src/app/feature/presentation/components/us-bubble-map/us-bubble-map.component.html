@@ -34,8 +34,10 @@
                     
                 </svg>
                 <div class="date">
-                    <h1>2020</h1>
-                    <h2>{{date | date:'MMMdd' | uppercase}}</h2>
+                    <h1 class="year">2020</h1>
+                    <div>
+                        <h2 class="month">{{date | date:'MMMdd' | uppercase}}</h2> <h2 class="day"></h2>
+                    </div>
     
                 </div>
             </div>
