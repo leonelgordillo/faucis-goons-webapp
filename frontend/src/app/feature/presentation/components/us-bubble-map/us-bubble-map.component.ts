@@ -184,9 +184,9 @@ export class UsBubbleMapComponent implements OnInit {
     this.updateMap();
 
     setInterval(() => {
-      this.sliderValue += 86400000;
-      this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
       if (this.date < this.dateMax) {
+        this.sliderValue += 86400000;
+        this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
         this.removeExistingMapFromParent();
         this.updateMap();
       }

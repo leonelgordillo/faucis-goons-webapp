@@ -1,8 +1,39 @@
-.sidenav-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #eee;
-  }
+.nav-button {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prefix {
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.mat-tab-label-active {
+  opacity: 1;
+}
+
+.arrow-buttons {
+  z-index: 100;
+  position: absolute;
+  top: 230px;
+  width: 100%;
+}
+
+.arrow-left-button {
+  margin: 10px;
+  text-align: center;
+}
+
+.arrow-right-button {
+  margin: 10px;
+  text-align: center;
+  float: right;
+}
+.arrow-icon {
+  font-size: 25px;
+  height: auto;
+  width: 25px;
+  color:white;
+  background-color: #1D4C81;
+  border-radius: 50%;
+}

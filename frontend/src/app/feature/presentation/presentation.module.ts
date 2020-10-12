@@ -11,6 +11,9 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { CountiesMapComponent } from './components/counties-map/counties-map.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
+import {  } from '@angular/material/tabs';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,6 +23,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { UsBubbleMapComponent } from './components/us-bubble-map/us-bubble-map.component';
+import { PredictionDataComponent } from './components/prediction-data/prediction-data.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { EconomicMobilityComponent } from './components/economic-mobility/economic-mobility.component';
 
 
 
@@ -32,12 +38,16 @@ import { UsBubbleMapComponent } from './components/us-bubble-map/us-bubble-map.c
     ChartsComponent,
     CountiesMapComponent,
     UsBubbleMapComponent,
+    PredictionDataComponent,
+    ProjectDetailsComponent,
+    EconomicMobilityComponent,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     PresentationRoutingModule,
     MatSidenavModule,
+    MatTabsModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
