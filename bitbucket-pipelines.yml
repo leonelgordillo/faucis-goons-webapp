@@ -1,0 +1,45 @@
+# This is a sample build configuration for Other.
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:12.18.4-slim
+
+pipelines:
+  default:
+    - step:
+        name: "Build & upload artifacts from code"
+        script:
+        - cp sample.env .env
+        - rm -rf node_modules builds/*
+        - npm install
+        - cd frontend
+        - npm install
+        - cd ..
+        - npm install --save-dev gulp
+        - ./node_modules/.bin/gulp
+        - cp builds/dev-build/$ZIP_FILE $ZIP_FILE
+        - pipe: atlassian/aws-elasticbeanstalk-deploy:0.2.3
+          variables:
+            AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+            AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+            AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+            APPLICATION_NAME: $APPLICATION_NAME
+            COMMAND: 'upload-only'
+            ZIP_FILE: $ZIP_FILE
+            S3_BUCKET: $S3_BUCKET
+            VERSION_LABEL: 'deploy-$BITBUCKET_BUILD_NUMBER'
+    - step:
+        name: "Deploy to DEV"
+        deployment: staging
+        script:
+        - pipe: atlassian/aws-elasticbeanstalk-deploy:0.2.3
+          variables:
+            AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+            AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+            AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+            APPLICATION_NAME: $APPLICATION_NAME
+            COMMAND: 'deploy-only'
+            VERSION_LABEL: 'deploy-$BITBUCKET_BUILD_NUMBER'
+            ENVIRONMENT_NAME: $ENVIRONMENT_NAME
+            WAIT: 'true'

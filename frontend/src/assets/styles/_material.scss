@@ -2,11 +2,17 @@
 
 .mat-form-field {
     margin-bottom: .5rem;
+    font-size: 10px
 }
 
 .mat-button {
     font-size: 12px;
 }
+
+.mat-toolbar {
+    color: white
+}
+
 
 .cdk-global-scrollblock {
     position: initial !important;

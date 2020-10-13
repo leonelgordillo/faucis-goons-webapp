@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ChartsComponent } from './components/charts/charts.component';
-import { DataTableComponent } from './components/data-table/data-table.component';
+import { EconomicMobilityComponent } from './components/economic-mobility/economic-mobility.component';
 import { HeatMapComponent } from './components/heat-map/heat-map.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { PredictionDataComponent } from './components/prediction-data/prediction-data.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 
 const routes: Routes = [
     {
@@ -13,10 +14,13 @@ const routes: Routes = [
         path: 'heat-map' , component: HeatMapComponent
     },
     {
-        path: 'charts', component: ChartsComponent
+        path: 'economic-mobility', component: EconomicMobilityComponent
     },
     {
-        path: 'data-table', component: DataTableComponent
+        path: 'prediction', component: PredictionDataComponent
+    },
+    {
+        path: 'project-details', component: ProjectDetailsComponent
     }
 ];
 

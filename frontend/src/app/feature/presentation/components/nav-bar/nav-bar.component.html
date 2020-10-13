@@ -1,22 +1,33 @@
 
-
-<mat-toolbar>
-
+<nav mat-tab-nav-bar>
     <div>
-        <mat-icon>api</mat-icon>
+        <h1 class=fgoons-icon>FG</h1>
     </div>
-    <div class="toolbar-buttons">
-        <button mat-button color="primary" [routerLink]="['']">
-            Intro
+    <a mat-tab-link
+    class="nav-button"
+    *ngFor="let link of navLinks"
+    (click)="activeLink = link"
+    [active]="activeLink == link"
+    
+    [routerLink]="link.link">
+    <span class="prefix">{{link.prefix}}</span>
+    {{link.label}}
+</a>
+</nav>
+
+<div class="arrow-buttons">
+    <div>
+        <button *ngIf="previousLink"
+        mat-button class="arrow-left-button"
+        [routerLink]="previousLink.link">
+            <mat-icon class="arrow-icon">arrow_backward</mat-icon>
         </button>
-        <button mat-button color="primary" [routerLink]="['/heat-map']">
-            Map View
-        </button>
-        <button mat-button color="primary" [routerLink]="['/data-table']">
-            Data Table
-        </button>
-        <button mat-button color="primary" [routerLink]="['/data-table']">
-            Conclusions
+        
+        <button *ngIf="nextLink"
+        mat-button class="arrow-right-button"
+        [routerLink]="nextLink.link">
+            <mat-icon class="arrow-icon">arrow_forward</mat-icon>
         </button>
     </div>
-</mat-toolbar>
+
+</div>

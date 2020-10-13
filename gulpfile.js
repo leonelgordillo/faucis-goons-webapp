@@ -51,7 +51,7 @@ function copyNodeJSCodeTask() {
   log('building and copying server code into the directory')
   // return src(['package.json', 'server.js'])
   return src([paths.api_src, `!${paths.api_src}/{node_modules,node_modules/**}`])
-        .pipe(dest(`${paths.build}/backend`))
+        .pipe(dest(`${paths.build}`))
 }
 
 function zippingTask() {

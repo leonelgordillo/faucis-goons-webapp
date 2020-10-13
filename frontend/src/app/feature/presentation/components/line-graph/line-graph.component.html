@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="graph-elements">
+        <div class="category-filter">
+            <div>
+                <span color="primary" class="legend-text text-dark-blue">Category</span>
+            </div>
+            <mat-form-field appearance="fill">
+                <mat-select>
+                  <mat-option *ngFor="let category of categories" [value]="category.value">
+                    {{category.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="legend">
+            <div>
+                <span class="legend-text text-dark-blue">Transportation Type</span>
+            </div>
+            <div class="legend-elements">
+                <span class="all dot"></span> <span class="category-text">All</span>
+                <span class="walking dot"></span> <span class="category-text">Walking</span>
+                <span class="driving dot"></span> <span class="category-text">Driving</span>
+                <span class="transit dot"></span> <span class="category-text">Transit</span>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <div style="display: block;">
+        <canvas baseChart width="300" height="200"
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins"
+          [legend]="lineChartLegend"
+          >
+        </canvas>
+      </div>
+      
+
+</div>
