@@ -57,6 +57,7 @@ div.tooltip {
 }
 
 .svg-container {
+    height: 450px;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -73,13 +74,27 @@ div.tooltip {
 }
 
 .date {
-    display: flex;
-    flex-direction: column;
-    float: right;
+    position: absolute;
+    left: 675px;
+    top: 170px;
+    width:150px;
 }
 
 .year {
-    margin-bottom: 0px;
-    line-height: 42px;
+    // margin-bottom: 0px;
+    // line-height: 42px;
+    font-size: 105px !important;
+    margin-bottom: -15px !important;
     letter-spacing: -2px;
+}
+
+.month {
+    display: flex;
+    font-size: 82px !important;
+    line-height: 115px !important;
+}
+
+.day {
+    font-size: 82px !important;
+    line-height: 115px !important;
 }

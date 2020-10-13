@@ -23,19 +23,19 @@ This application is designed to run on AWS's Elastic Beanstalk service. Node.js 
 
 3) Also run 'npm install' inside the "frontend" directory if it doesn't have a "node_modules" directory already.
 
-3) Then navigate back to the root directory and run the command 'gulp'
+4) Then navigate back to the root directory and run the command 'gulp'
 
-4) If there are no errors after the gulp script executes, then there should be a new folder in the "builds" folder with the name "{ENV}-build"
+5) If there are no errors after the gulp script executes, then there should be a new folder in the "builds" folder with the name "{ENV}-build"
 
-5) To test the application locally, navigate to the "backend" folder inside the new build folder using the command prompt (I.E "cd ./builds/dev-build/backend")
+6) To test the application locally, navigate to the "{ENV}-build" folder inside the "builds" folder using the command prompt (I.E "cd ./builds/dev-build")
 
-6) Then run 'npm install' inside this folder
+7) Then run 'npm install' inside this folder
 
-7) After installing dependencies, run the 'npm run start' command
+8) After installing dependencies, run the 'npm run start' command
 
-8) If there are no errors, you should see this message: "Server listening on the port::8080"
+9) If there are no errors, you should see this message: "Server listening on the port::8080"
 
-9) Using your browser, navigate to "localhost:8080". You should see the application's landing page
+10) Using your browser, navigate to "localhost:8080". You should see the application's landing page
 
 
 ## Deploying to Elastic Beanstalk:

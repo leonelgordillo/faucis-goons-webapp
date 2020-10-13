@@ -5,6 +5,7 @@ import { PresentationModule } from './feature/presentation/presentation.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

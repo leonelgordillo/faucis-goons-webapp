@@ -7,12 +7,13 @@ import { HeatMapComponent } from './components/heat-map/heat-map.component';
 import { DataTableComponent } from './components/data-table/data-table.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { ChartsComponent } from './components/charts/charts.component';
+import { LineGraphComponent } from './components/line-graph/line-graph.component';
 import { CountiesMapComponent } from './components/counties-map/counties-map.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
-import {  } from '@angular/material/tabs';
+import { ChartsModule } from 'ng2-charts';
+
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -35,7 +36,7 @@ import { EconomicMobilityComponent } from './components/economic-mobility/econom
     DataTableComponent,
     LandingComponent,
     NavBarComponent,
-    ChartsComponent,
+    LineGraphComponent,
     CountiesMapComponent,
     UsBubbleMapComponent,
     PredictionDataComponent,
@@ -56,7 +57,8 @@ import { EconomicMobilityComponent } from './components/economic-mobility/econom
     MatSliderModule,
     MatButtonToggleModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartsModule
   ],
   providers: [],
   exports: [
@@ -64,7 +66,7 @@ import { EconomicMobilityComponent } from './components/economic-mobility/econom
     DataTableComponent,
     LandingComponent,
     NavBarComponent,
-    ChartsComponent,
+    LineGraphComponent,
     CountiesMapComponent,
     UsBubbleMapComponent
   ]

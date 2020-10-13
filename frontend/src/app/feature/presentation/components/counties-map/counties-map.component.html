@@ -15,6 +15,8 @@
 
                     <div class="time-slider">
                         <span>Time Series</span>
+                        <div class="slider-date">
+
                         <div class="slider-group">
                             <button (click)="updateSlider('decrement')" mat-button color="primary">
                                 <mat-icon>arrow_left</mat-icon>
@@ -27,9 +29,11 @@
                                 <mat-icon>arrow_right</mat-icon>
                             </button>
                         </div>
-                        <div>
+                        <div style="text-align: center;width: 328px;">
                             <span class="date"><b>{{date | date}}</b></span>
                         </div>
+                    </div>
+
                     </div>
 
             </div>
