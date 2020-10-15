@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
+import { countyList } from '../../data/county-list';
+import { PredictionService } from '../../services/prediction.service';
 
 @Component({
   selector: 'app-prediction-graph',
@@ -9,25 +13,32 @@ import { Color, Label } from 'ng2-charts';
 })
 export class PredictionGraphComponent implements OnInit {
 
-  categories = [
-    { value: "food-services", viewValue: "Food Services" },
-    { value: "automotive", viewValue: "Automotive" },
-    { value: "clothing", viewValue: "Clothing" }
+  counties = countyList;
+  public selectedCounty = countyList[0]
+  startMinDate = new Date(2020, 8, 27);
+  startMaxDate = new Date(2020, 9, 6);
+  endMinDate = new Date(2020, 8, 27);
+  endMaxDate = new Date(2020, 9, 6);
+  serializedStartDate = new FormControl();
+  serializedEndDate = new FormControl(); 
 
-  ]
+  p10: any
+  p50: any
+  p90: any
+
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A', lineTension:0 },
-    { data: [54, 23, 56, 78, 82, 43, 90], label: 'Series B', lineTension:0 },
-    { data: [54, 21, 89, 15, 54, 66, 37], label: 'Series C', lineTension:0 },
+    { data: [], label: 'p10', lineTension:0 },
+    { data: [], label: 'p50', lineTension:0 },
+    { data: [], label: 'p90', lineTension:0 },
 
 
   ];
-  public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  public lineChartLabels: Label[] = [];
   public lineChartOptions = {
     responsive: true,
     legend: {
-      display: false
+      display: true
     },
 
   };
@@ -50,9 +61,67 @@ export class PredictionGraphComponent implements OnInit {
   public lineChartPlugins = [];
 
 
-  constructor() { }
+  constructor(private predictionService: PredictionService) { }
 
   ngOnInit(): void {
+  }
+
+  updateEndMin(event: MatDatepickerInputEvent<Date>): void {
+    if (event.value) {
+      let date = event.value.getTime();
+      this.endMinDate.setTime(date + (1*24*3600000));
+    }
+    return;
+
+  }
+
+  updateStartMax(event: MatDatepickerInputEvent<Date>): void {
+
+    if (event.value) {
+      let date = event.value.getTime();
+      this.startMaxDate.setTime(date - (1*24*3600000)) 
+    }
+    return;
+  }
+
+  queryForecaster(): void {
+
+    if (this.serializedEndDate && this.serializedStartDate && this.selectedCounty) {
+      if (this.serializedStartDate.valid && this.serializedEndDate.valid){
+
+
+
+        console.log("Valid Dates and county!");
+        this.predictionService.getCountyMobilityPrediction(this.selectedCounty, this.serializedStartDate.value, this.serializedEndDate.value)
+          .subscribe((data) => {
+            this.p10 = data.Predictions.p10
+            this.p50 = data.Predictions.p50
+            this.p90 = data.Predictions.p90
+
+            this.lineChartData[0].data = this.p10.map((v) => v.Value);
+            this.lineChartData[1].data = this.p50.map((v) => v.Value);
+            this.lineChartData[2].data = this.p90.map((v) => v.Value);
+
+            let options = { weekday: 'short', month: 'short', day: 'numeric' };
+
+
+            this.lineChartLabels = this.p10.map((v) => {
+              let newDate = new Date(v.Timestamp)
+              let formattedDate = newDate.toLocaleDateString("en-US", options) 
+              return formattedDate;
+            });
+            // this.lineChartLabels[1] = this.p50.map((v) => v.Timestamp);
+            // this.lineChartLabels[2] = this.p90.map((v) => v.Timestamp);
+            // console.log(data)
+          })
+
+      } else {
+        console.log("ERROR");
+      }
+    }
+    return;
+
+    
   }
 
 }

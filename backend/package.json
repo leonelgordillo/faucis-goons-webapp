@@ -12,6 +12,7 @@
   "dependencies": {
     "athena-express": "^6.0.4",
     "aws-sdk": "^2.771.0",
+    "dateformat": "^3.0.3",
     "del": "^6.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

@@ -1,18 +1,48 @@
-<div class="container">
-    <!-- <div class="graph-elements">
-        <div class="category-filter">
+<div class="prediction-graph">
+    <div class="graph-elements">
+        <div class="county-filter">
             <div>
-                <span color="primary" class="legend-text text-dark-blue">Category</span>
+                <span color="primary" class="legend-text text-dark-blue">County</span>
             </div>
-            <mat-form-field appearance="fill">
-                <mat-select>
-                  <mat-option *ngFor="let category of categories" [value]="category.value">
-                    {{category.viewValue}}
+
+              <div class="county-select">
+                <mat-form-field appearance="fill">
+
+                <mat-select [(ngModel)]="selectedCounty">
+                  <mat-option *ngFor="let county of counties" [value]="county">
+                    {{county}}
                   </mat-option>
                 </mat-select>
               </mat-form-field>
+              </div>
+
+
+              <div class="date-picker">
+                <mat-form-field>
+                <input matInput [min]="startMinDate" [max]="startMaxDate" [matDatepicker]="picker" placeholder="Start Date" [formControl]="serializedStartDate"
+                  (dateChange)="updateEndMin($event)">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker [startAt]="startMinDate"></mat-datepicker>
+              </mat-form-field>
+              </div>
+
+              <div class="date-picker">
+                <mat-form-field>
+                <input matInput [min]="endMinDate" [max]="endMaxDate" [matDatepicker]="picker2" placeholder="End Date" [formControl]="serializedEndDate"
+                  (dateChange)="updateStartMax($event)">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2 [startAt]="endMaxDate"></mat-datepicker>
+              </mat-form-field>
+              </div>
+
+              <button mat-button (click)="queryForecaster()">
+                Submit
+              </button>
+
+
+
         </div>
-        <div class="legend">
+        <!-- <div class="legend">
             <div>
                 <span class="legend-text text-dark-blue">Transportation Type</span>
             </div>
@@ -23,9 +53,8 @@
                 <span class="transit dot"></span> <span class="category-text">Transit</span>
     
             </div>
-        </div>
-    </div> -->
-
+        </div> -->
+    </div>
 
     <div style="display: block;">
         <canvas baseChart width="150" height="100"

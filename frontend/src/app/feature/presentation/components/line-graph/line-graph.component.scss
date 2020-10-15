@@ -1,3 +1,8 @@
+.line-graph-elements {
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 90%;
+}
 .graph-elements {
     display: flex;
     justify-content: left;
@@ -21,6 +26,7 @@
 .category-filter {
   padding-left: 26px;
   padding-right: 50px;
+  z-index: 100;
 }
 
 

@@ -12,6 +12,7 @@ import { CountiesMapComponent } from './components/counties-map/counties-map.com
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ChartsModule } from 'ng2-charts';
 
 
@@ -20,8 +21,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { UsBubbleMapComponent } from './components/us-bubble-map/us-bubble-map.component';
 import { PredictionDataComponent } from './components/prediction-data/prediction-data.component';
@@ -57,7 +61,11 @@ import { PredictionTableComponent } from './components/prediction-table/predicti
     MatTabsModule,
     MatButtonModule,
     MatToolbarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
     MatIconModule,
+    MatFormFieldModule,
     MatProgressSpinnerModule,
     MatSelectModule,
     MatSliderModule,
