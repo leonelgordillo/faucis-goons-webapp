@@ -41,7 +41,7 @@ export class CountiesMapComponent implements OnInit {
   projection;
   path;
 
-  width = 960;
+  width = 860;
   height = 500;
 
   centered;
@@ -131,10 +131,12 @@ export class CountiesMapComponent implements OnInit {
   public sliderMax: number;
   public sliderStep: number = 86400000;
 
-  public drillDownX: number = -539.001986605247;
-  public drillDownY: number = -653.5193497376141;
-  public drillDownScale: number = 2.379577595818353;
-
+  // public drillDownX: number = -539.001986605247;
+  // public drillDownY: number = -653.5193497376141;
+  // public drillDownScale: number = 2.379577595818353;
+  public drillDownScale: number = 2.079577595818353;
+  public drillDownX: number = -349.001986605247;
+  public drillDownY: number = -535.5193497376141;
 
   constructor(
     private elRef: ElementRef,

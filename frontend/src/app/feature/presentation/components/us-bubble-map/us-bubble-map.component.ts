@@ -232,7 +232,8 @@ export class UsBubbleMapComponent implements OnInit {
       .attr('class', 'background')
       .attr('width', this.width)
       .attr('height', this.height)
-      .style('fill', 'darkgray')
+      // .style('fill', 'rgba(58, 122, 168)')
+      // .style('opacity', 0.4)
       .on('click', function (d) {
         //  Don't zoom out when selecting rect
         // that.reset(d, that);      })
@@ -574,7 +575,7 @@ export class UsBubbleMapComponent implements OnInit {
       .attr('width', that.legendContainerSettings.width)
       .attr('height', that.legendContainerSettings.height)
       .attr('id', 'legend-container')
-      .style('fill', 'darkgray');
+      .style('opactity', '0.5');
 
 
     var legend = that.svg.selectAll('g.legend')

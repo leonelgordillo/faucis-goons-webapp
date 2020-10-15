@@ -1,5 +1,12 @@
 .heat-map-page {
-    padding-top: 20px;
+    padding-top: 60px;
+    display: flex;
+}
+
+.title {
+    font-size: 80px;
+    line-height: 90px;
+    padding-left: 20px;
 }
 
 .description {
@@ -17,6 +24,6 @@
 
 .map-description {
     padding: 10px;
-    margin-left: -200px;
     padding-right: 40px;
+    padding-left: 30px;
 }

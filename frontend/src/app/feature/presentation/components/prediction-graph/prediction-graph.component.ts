@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
-
 @Component({
-  selector: 'app-line-graph',
-  templateUrl: './line-graph.component.html',
-  styleUrls: ['./line-graph.component.scss']
+  selector: 'app-prediction-graph',
+  templateUrl: './prediction-graph.component.html',
+  styleUrls: ['./prediction-graph.component.scss']
 })
-export class LineGraphComponent implements OnInit {
+export class PredictionGraphComponent implements OnInit {
 
   categories = [
     { value: "food-services", viewValue: "Food Services" },

@@ -27,6 +27,9 @@ import { UsBubbleMapComponent } from './components/us-bubble-map/us-bubble-map.c
 import { PredictionDataComponent } from './components/prediction-data/prediction-data.component';
 import { ProjectDetailsComponent } from './components/project-details/project-details.component';
 import { EconomicMobilityComponent } from './components/economic-mobility/economic-mobility.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PredictionGraphComponent } from './components/prediction-graph/prediction-graph.component';
+import { PredictionTableComponent } from './components/prediction-table/prediction-table.component';
 
 
 
@@ -42,6 +45,9 @@ import { EconomicMobilityComponent } from './components/economic-mobility/econom
     PredictionDataComponent,
     ProjectDetailsComponent,
     EconomicMobilityComponent,
+    AboutUsComponent,
+    PredictionGraphComponent,
+    PredictionTableComponent,
   ],
   imports: [
     CommonModule,
@@ -68,7 +74,9 @@ import { EconomicMobilityComponent } from './components/economic-mobility/econom
     NavBarComponent,
     LineGraphComponent,
     CountiesMapComponent,
-    UsBubbleMapComponent
+    UsBubbleMapComponent,
+    PredictionGraphComponent,
+    PredictionTableComponent,
   ]
 })
 export class PresentationModule { }

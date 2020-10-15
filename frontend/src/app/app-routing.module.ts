@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./feature/presentation/presentation.module').then(m => m.PresentationModule)
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

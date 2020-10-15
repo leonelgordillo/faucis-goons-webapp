@@ -6,9 +6,10 @@
     stroke: grey;
     stroke-width: 0.3;
     width: 300px;
+    fill-opacity: 1;
 }
 .background {
-    fill: none;
+    opacity: 0;
     pointer-events: all;
 }
 
@@ -33,7 +34,7 @@ div.tooltip {
 }
   
 .bubble {
-    fill-opacity: .7;
+    fill-opacity: .6;
     stroke: #fff;
     stroke-width: .5px;
     fill: red;
@@ -70,7 +71,6 @@ div.tooltip {
     top: 0;
     left: 0;
     height: 450px;
-    background-color: darkgray;
 }
 
 .date {

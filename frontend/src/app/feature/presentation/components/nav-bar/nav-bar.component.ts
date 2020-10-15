@@ -38,6 +38,12 @@ export class NavBarComponent implements OnInit {
       prefix: "05",
       index: 4
     },
+    {
+      label: 'About Us',
+      link: '/about-us',
+      prefix: "06",
+      index: 4
+    },
   ];
 
   activeLink = this.navLinks[0];

@@ -40,7 +40,7 @@ div.tooltip {
 }
   
 .slider {
-    width: 200px;
+    width: 150px;
 }
 
 .slider-group {
@@ -51,11 +51,17 @@ div.tooltip {
     margin: 10px
 }
 
-.filter-elemenets {
-    font-size: 16px;
+.filter-elements {
     position: absolute;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .date {
     font-size: 14px;
+    font-weight: 700;
+}
+
+.mat-button-toggle-appearance-standard {
+    line-height: 30px !important;
 }
