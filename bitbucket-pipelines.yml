@@ -21,6 +21,7 @@ pipelines:
   branches:
     dev:
       - step:
+          size: 2x
           name: "Build & upload artifacts from code"
           script:
           - cp sample.env .env
