@@ -1,48 +1,51 @@
 <div class="prediction-graph">
-    <div class="graph-elements">
-        <div class="county-filter">
-            <div>
-                <span color="primary" class="legend-text text-dark-blue">County</span>
-            </div>
+  <div class="graph-elements">
+    <div class="county-filter">
+      <div class="county-input">
 
-              <div class="county-select">
-                <mat-form-field appearance="fill">
-
-                <mat-select [(ngModel)]="selectedCounty">
-                  <mat-option *ngFor="let county of counties" [value]="county">
-                    {{county}}
-                  </mat-option>
-                </mat-select>
-              </mat-form-field>
-              </div>
-
-
-              <div class="date-picker">
-                <mat-form-field>
-                <input matInput [min]="startMinDate" [max]="startMaxDate" [matDatepicker]="picker" placeholder="Start Date" [formControl]="serializedStartDate"
-                  (dateChange)="updateEndMin($event)">
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker [startAt]="startMinDate"></mat-datepicker>
-              </mat-form-field>
-              </div>
-
-              <div class="date-picker">
-                <mat-form-field>
-                <input matInput [min]="endMinDate" [max]="endMaxDate" [matDatepicker]="picker2" placeholder="End Date" [formControl]="serializedEndDate"
-                  (dateChange)="updateStartMax($event)">
-                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-                <mat-datepicker #picker2 [startAt]="endMaxDate"></mat-datepicker>
-              </mat-form-field>
-              </div>
-
-              <button mat-button (click)="queryForecaster()">
-                Submit
-              </button>
-
-
-
+        <div class="date-picker filter-input">
+          <mat-form-field filter-input>
+            <input matInput [min]="startMinDate" [max]="startMaxDate" [matDatepicker]="picker" placeholder="Start Date" (click)="picker.open()"
+              [formControl]="serializedStartDate" (dateChange)="updateEndMin($event)">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker [startAt]="startMinDate"></mat-datepicker>
+          </mat-form-field>
         </div>
-        <!-- <div class="legend">
+
+        <div class="date-picker filter-input">
+          <mat-form-field filter-input>
+            <input matInput [min]="endMinDate" [max]="endMaxDate" [matDatepicker]="picker2" placeholder="End Date" (click)="picker2.open()"
+              [formControl]="serializedEndDate" (dateChange)="updateStartMax($event)">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2 [startAt]="endMaxDate"></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="county-select">
+          <mat-form-field filter-input style="bottom: 2px;">
+            <mat-select placeholder="Select County" [(ngModel)]="selectedCounty">
+              <mat-option *ngFor="let county of counties" [value]="county">
+                {{county}}
+              </mat-option>
+            </mat-select>
+            </mat-form-field>
+        </div>
+      </div>
+
+      <div style="width: auto;">
+        <button color="primary" mat-stroked-button (click)="queryForecaster()">
+          Get Prediction
+        </button>
+      </div>
+
+      <div>
+        <h2 style="padding-top: 20px; color: #3191AA;"><b>{{displayedCounty}}</b></h2>
+      </div>
+
+
+
+    </div>
+    <!-- <div class="legend">
             <div>
                 <span class="legend-text text-dark-blue">Transportation Type</span>
             </div>
@@ -54,20 +57,14 @@
     
             </div>
         </div> -->
-    </div>
+  </div>
 
-    <div style="display: block;">
-        <canvas baseChart width="150" height="100"
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [chartType]="lineChartType"
-          [plugins]="lineChartPlugins"
-          [legend]="lineChartLegend"
-          >
-        </canvas>
-      </div>
-      
+  <div style="display: block;">
+    <canvas baseChart width="100" height="50" [datasets]="lineChartData" [labels]="lineChartLabels"
+      [options]="lineChartOptions" [colors]="lineChartColors" [chartType]="lineChartType" [plugins]="lineChartPlugins"
+      [legend]="lineChartLegend">
+    </canvas>
+  </div>
+
 
 </div>

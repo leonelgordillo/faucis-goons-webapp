@@ -3,6 +3,11 @@
     padding-right: 50px;
     z-index: 100;
   }
+
+  .county-input {
+    display: inline-flex;
+  }
+
   .line-graph-elements {
     padding-left: 50px;
     padding-right: 50px;
@@ -56,4 +61,15 @@
   
     .mat-select {
         font-size: 12px;
+    }
+
+    .filter-input {
+      width: 90%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .date-picker {
+      align-self: flex-end;
+      padding-bottom: 3px;
     }

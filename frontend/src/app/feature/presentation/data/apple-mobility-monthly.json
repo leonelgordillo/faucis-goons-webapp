@@ -1,0 +1,128 @@
+[
+    {
+        "transportation_type": "driving",
+        "month": "Jan",
+        "relative_mobility_sum": "132.99",
+        "relative_mobility_mean": "6.9994736842105265"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "Feb",
+        "relative_mobility_sum": "415.22",
+        "relative_mobility_mean": "14.31793103448276"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "Mar",
+        "relative_mobility_sum": "-454.15999999999997",
+        "relative_mobility_mean": "-14.65032258064516"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "Apr",
+        "relative_mobility_sum": "-1165.0900000000001",
+        "relative_mobility_mean": "-38.836333333333336"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "May",
+        "relative_mobility_sum": "-80.91999999999997",
+        "relative_mobility_mean": "-2.790344827586206"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "Jun",
+        "relative_mobility_sum": "828.0",
+        "relative_mobility_mean": "27.6"
+    },
+    {
+        "transportation_type": "driving",
+        "month": "Jul",
+        "relative_mobility_sum": "1171.8200000000004",
+        "relative_mobility_mean": "37.80064516129033"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Jan",
+        "relative_mobility_sum": "-16.370000000000005",
+        "relative_mobility_mean": "-0.8615789473684213"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Feb",
+        "relative_mobility_sum": "67.19",
+        "relative_mobility_mean": "2.3168965517241378"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Mar",
+        "relative_mobility_sum": "-1261.27",
+        "relative_mobility_mean": "-40.686129032258066"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Apr",
+        "relative_mobility_sum": "-2269.67",
+        "relative_mobility_mean": "-75.65566666666668"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "May",
+        "relative_mobility_sum": "-1973.4499999999998",
+        "relative_mobility_mean": "-68.05"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Jun",
+        "relative_mobility_sum": "-1662.53",
+        "relative_mobility_mean": "-55.41766666666667"
+    },
+    {
+        "transportation_type": "transit",
+        "month": "Jul",
+        "relative_mobility_sum": "-1513.7499999999998",
+        "relative_mobility_mean": "-48.83064516129031"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Jan",
+        "relative_mobility_sum": "104.91000000000001",
+        "relative_mobility_mean": "5.521578947368422"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Feb",
+        "relative_mobility_sum": "410.8",
+        "relative_mobility_mean": "14.16551724137931"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Mar",
+        "relative_mobility_sum": "-681.44",
+        "relative_mobility_mean": "-21.98193548387097"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Apr",
+        "relative_mobility_sum": "-1492.7199999999998",
+        "relative_mobility_mean": "-49.75733333333333"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "May",
+        "relative_mobility_sum": "-523.3500000000001",
+        "relative_mobility_mean": "-18.046551724137935"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Jun",
+        "relative_mobility_sum": "338.4",
+        "relative_mobility_mean": "11.28"
+    },
+    {
+        "transportation_type": "walking",
+        "month": "Jul",
+        "relative_mobility_sum": "688.2599999999999",
+        "relative_mobility_mean": "22.201935483870965"
+    }
+]

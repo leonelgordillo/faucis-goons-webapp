@@ -1,1 +1,111 @@
-<p>project-details works!</p>
+    <div class="project-details">
+
+    <div class="div-block-10">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="heading-1">Sogeti USA DevOps Hackathon 2020<br>September 16th - October 16th</h1>
+            </div>
+            <div class="col-md-8" style="padding-left: 50px;">
+                <h1 class="subheading">Problem Space</h1>
+                <div class="paragraph1">AI Data Health Detection: Identify the critical data points during a pandemic
+                    using AI</div>
+                <h1 class="subheading">Problem Statement</h1>
+                <div class="paragraph1">Businesses struggle to predict the type and geographical location of sales
+                    during a pandemic </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-block-10">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="heading-1">Scrum Roles</h1>
+            </div>
+            <div class="col-md-8" style="padding-left: 50px;">
+                <h1 class="subheading">Scrum Master</h1>
+                <div class="paragraph1">Stephen Peters</div>
+                <h1 class="subheading">Product Owner</h1>
+                <div class="paragraph1">Eric Jiang</div>
+            </div>
+        </div>
+    </div>
+    <div class="scrum-schedule">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="heading-1 btm-padding">Scrum Schedule</h1>
+            </div>
+            <div class="col-md-8" style="padding-left: 50px;"><img src="assets/img/scrum-schedule.svg" loading="lazy" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <div class="team-workflows">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="heading-1 padding">Team Workflows</h1>
+            </div>
+            <div class="col-md-8" style="padding-left: 50px;"><img src="assets/img/Team-workflows.svg" loading="lazy" alt="" class="image-2">
+            </div>
+        </div>
+    </div>
+    <div class="div-block-12">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="heading-1 padding">Tooling</h1>
+            </div>
+            <div class="col-md-8" style="padding-left: 50px;">
+                <div class="paragraph-text"><strong>Did the team implement Deployment Validation and automated Rollback
+                        Capabilities as a final quality gate?</strong> <br> <br>&gt;&gt; <strong>The deployment
+                        validation</strong> was performed for every deployment, albeit manually.  For each deployment,
+                    once the deployment was completed, a two-step validation procedure was executed.  <br><br>1) On the
+                    AWS Elastic Beanstalk application page, verify that the current deployment to the target environment
+                    matches the latest build, also checking that the <em>Health</em> of the application is
+                    <strong>Ok</strong>. </div><img src="assets/img/Screen-Shot-2020-10-15-at-9.33.08-PM.png" loading="lazy"
+                    srcset="assets/img/Screen-Shot-2020-10-15-at-9.33.08-PM.png 500w, assets/img/Screen-Shot-2020-10-15-at-9.33.08-PM.png 632w"
+                    sizes="(max-width: 479px) 86vw, (max-width: 726px) 87vw, (max-width: 767px) 632px, 58vw" alt=""
+                    class="image-4">
+                <div>2) Then, direct a browser to the application site and conduct smoke test.  <br>&gt;&gt; <strong>The
+                        rollback procedure</strong> is as follows.  It’s not completely automated, but it is just a push
+                    of a button. <br>1) On the AWS Elastic Beanstalk application page, navigate to the A<em>pplication
+                        versions</em>. <br>2) Select the version of the application to roll back to and select
+                    <em>Deploy</em> from the <em>Actions</em> menu. </div><img
+                    src="assets/img/Screen-Shot-2020-10-15-at-9.33.19-PM.png" loading="lazy"
+                    srcset="assets/img/Screen-Shot-2020-10-15-at-9.33.19-PM.png 500w, assets/img/Screen-Shot-2020-10-15-at-9.33.19-PM.png 632w"
+                    sizes="(max-width: 479px) 86vw, (max-width: 726px) 87vw, (max-width: 767px) 632px, 58vw" alt=""
+                    class="image-3">
+                <div><strong>How complete was the Continuous Integration Implementation?</strong>  <br><br>&gt;&gt;
+                    Continuous Integration was implemented for all branches of code.  A single Bitbucket pipeline would
+                    automatically trigger to generate a build of the source regardless of what branch the source changes
+                    were committed to.  The resulting build artifacts were uploaded to an S3 bucket in AWS for potential
+                    deployment.  <br><br>&gt;&gt; For builds that were generated from the <em>dev</em> or
+                    <em>master</em> branch, the CI implementation would further trigger a CD process to automatically
+                    deploy the generated build to the Dev environment for dev-branch builds and to the Prod environment
+                    for master-branch builds. <br><br>‍<strong>What sort of Deployment methodology was
+                        implemented?</strong>  <br><br>&gt;&gt; The deployment of the web app was automated as a
+                    Bitbucket pipeline.  Deployments to the <em>Dev</em> and <em>Prod</em> environments were triggered
+                    to occur automatically following successful builds from the <em>dev</em> or <em>master</em> branches
+                    of source.  <br><br>The Bitbucket pipeline specifically leveraged the
+                    <em>aws-elasticbeanstalk-deploy</em> pipe to deploy build artifacts to the target environment of our
+                    Elastic Beanstalk application.  Here is the <a
+                        href="https://bitbucket.org/atlassian/aws-elasticbeanstalk-deploy/src/master/"
+                        target="_blank">reference page</a> for the <em>aws-elasticbeanstalk-deploy</em> pipe.      
+                     <br><br>‍<strong>What type of Source Control Branching methodology was used?</strong>
+                     <br><br>&gt;&gt; The branching methodology that we used was a derivative of the <em>Gitflow
+                        Workflow</em> branch model.  Here is a <a
+                        href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+                        target="_blank">description</a> of the Gitflow Workflow branch model.  <br><br>The only
+                    difference between the branching methodology that we used, and the Gitflow Workflow is that we did
+                    not utilize release branches in our model.  We did not use Release branches, because we anticipated
+                    only having a single release to Production at the end of the Hackathon.  Thus, instead of forking a
+                    release branch from the develop branch and then merging the release branch to the master branch, we
+                    eliminated the Release branch, and simply merged the develop branch with the master branch when we
+                    were ready to release to Production.  <br><br>All our development was done on feature branches.
+                     Using feature branches allowed us to isolate the development work related to stories on specific
+                    branches.  Once a story was code-complete, we would issue a pull request to merge the feature branch
+                    to the develop branch to integrate the new functionality with the rest of the code.  The newly
+                    integrated code would be built and deployed to the Dev environment for integration-level testing.
+                     <br><br>At the end of the Hackathon, the develop branch was merged with the master branch.  A build
+                    from the master branch was then generated and that build was then deployed to the Production
+                    environment of our Elastic Beanstalk application. </div>
+            </div>
+        </div>
+    </div>
+</div>

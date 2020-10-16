@@ -4,6 +4,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 import { countyList } from '../../data/county-list';
+import { DataService } from '../../services/data.service';
 import { PredictionService } from '../../services/prediction.service';
 
 @Component({
@@ -14,13 +15,14 @@ import { PredictionService } from '../../services/prediction.service';
 export class PredictionGraphComponent implements OnInit {
 
   counties = countyList;
-  public selectedCounty = countyList[0]
+  public selectedCounty;
   startMinDate = new Date(2020, 8, 27);
-  startMaxDate = new Date(2020, 9, 6);
+  startMaxDate = new Date(2020, 9, 5);
   endMinDate = new Date(2020, 8, 27);
-  endMaxDate = new Date(2020, 9, 6);
+  endMaxDate = new Date(2020, 9, 5);
   serializedStartDate = new FormControl();
   serializedEndDate = new FormControl(); 
+  displayedCounty;
 
   p10: any
   p50: any
@@ -40,6 +42,14 @@ export class PredictionGraphComponent implements OnInit {
     legend: {
       display: true
     },
+    scales: {
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: "Relative Mobility"
+        }
+      }]
+    }
 
   };
   public lineChartColors: Color[] = [
@@ -61,7 +71,8 @@ export class PredictionGraphComponent implements OnInit {
   public lineChartPlugins = [];
 
 
-  constructor(private predictionService: PredictionService) { }
+  constructor(private predictionService: PredictionService,
+              private dataService: DataService) { }
 
   ngOnInit(): void {
   }
@@ -94,6 +105,11 @@ export class PredictionGraphComponent implements OnInit {
         console.log("Valid Dates and county!");
         this.predictionService.getCountyMobilityPrediction(this.selectedCounty, this.serializedStartDate.value, this.serializedEndDate.value)
           .subscribe((data) => {
+
+            this.displayedCounty = this.selectedCounty + ", TX"
+
+            this.dataService.changeCounty(this.selectedCounty);
+
             this.p10 = data.Predictions.p10
             this.p50 = data.Predictions.p50
             this.p90 = data.Predictions.p90

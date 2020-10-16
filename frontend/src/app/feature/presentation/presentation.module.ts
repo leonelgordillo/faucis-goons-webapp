@@ -7,7 +7,7 @@ import { HeatMapComponent } from './components/heat-map/heat-map.component';
 import { DataTableComponent } from './components/data-table/data-table.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LineGraphComponent } from './components/line-graph/line-graph.component';
+import { RetailSalesGraph } from './components/retail-sales-graph/retail-sales-graph.component';
 import { CountiesMapComponent } from './components/counties-map/counties-map.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -43,7 +43,7 @@ import { PredictionTableComponent } from './components/prediction-table/predicti
     DataTableComponent,
     LandingComponent,
     NavBarComponent,
-    LineGraphComponent,
+    RetailSalesGraph,
     CountiesMapComponent,
     UsBubbleMapComponent,
     PredictionDataComponent,
@@ -80,7 +80,7 @@ import { PredictionTableComponent } from './components/prediction-table/predicti
     DataTableComponent,
     LandingComponent,
     NavBarComponent,
-    LineGraphComponent,
+    RetailSalesGraph,
     CountiesMapComponent,
     UsBubbleMapComponent,
     PredictionGraphComponent,

@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1255px" height="1002px" viewBox="0 0 1255 1002" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-2" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-4">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-7">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-8" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-10">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-11" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-13">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-14" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-16">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-17" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-19">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-20" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-22">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-23" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-25">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-26" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-28">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-29" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-31">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-32" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-34">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-35" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-37">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-38" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-40">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-41" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-43">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-44" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-46">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-47" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-49">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-50" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-52">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-53" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-55">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-56" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-58">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-59" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+        <filter id="filter-61">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 0 0.129412 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <polygon id="path-62" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Predicted-Mobility_-harris" transform="translate(-102.000000, -1328.000000)">
+            <g id="Group-9" transform="translate(102.000000, 1328.000000)">
+                <text id="Eric" font-family="OpenSans-Bold, sans-serif" font-size="34" font-weight="bold" fill="#212121">
+                    <tspan x="57" y="36">Eric</tspan>
+                </text>
+                <text id="Juan" font-family="OpenSans-Bold, sans-serif" font-size="34" font-weight="bold" fill="#212121">
+                    <tspan x="409" y="36">Juan</tspan>
+                </text>
+                <text id="Leo" font-family="OpenSans-Bold, sans-serif" font-size="34" font-weight="bold" fill="#212121">
+                    <tspan x="777" y="36">Leo</tspan>
+                </text>
+                <text id="Stephen" font-family="OpenSans-Bold, sans-serif" font-size="34" font-weight="bold" fill="#212121">
+                    <tspan x="1097" y="36">Stephen</tspan>
+                </text>
+                <rect id="Rectangle" fill="#212121" x="0" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="476" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="0" y="613" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="613" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="750" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="65" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="476" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="613" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="750" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="359" y="887" width="177" height="115"></rect>
+                <rect id="Rectangle" fill="#212121" x="719" y="476" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="339" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="202" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="613" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="613" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="750" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="750" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="476" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="476" width="177" height="97"></rect>
+                <rect id="Rectangle" fill="#212121" x="1078" y="887" width="177" height="97"></rect>
+                <text id="Setup-Miro-board-for" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1096.771" y="108">Setup Miro board for </tspan>
+                    <tspan x="1100.62646" y="127">group collaboration</tspan>
+                </text>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(77.000000, 170.000000)" filter="url(#filter-1)">
+                    <g>
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-3)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(77.000000, 307.000000)" filter="url(#filter-4)">
+                    <g>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-6)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(77.000000, 442.000000)" filter="url(#filter-7)">
+                    <g>
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-9)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(77.000000, 581.000000)" filter="url(#filter-10)">
+                    <g>
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-12)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 170.000000)" filter="url(#filter-13)">
+                    <g>
+                        <mask id="mask-15" fill="white">
+                            <use xlink:href="#path-14"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-15)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 307.000000)" filter="url(#filter-16)">
+                    <g>
+                        <mask id="mask-18" fill="white">
+                            <use xlink:href="#path-17"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-18)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 442.000000)" filter="url(#filter-19)">
+                    <g>
+                        <mask id="mask-21" fill="white">
+                            <use xlink:href="#path-20"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-21)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 581.000000)" filter="url(#filter-22)">
+                    <g>
+                        <mask id="mask-24" fill="white">
+                            <use xlink:href="#path-23"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-24)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 718.000000)" filter="url(#filter-25)">
+                    <g>
+                        <mask id="mask-27" fill="white">
+                            <use xlink:href="#path-26"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-27)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(436.000000, 857.000000)" filter="url(#filter-28)">
+                    <g>
+                        <mask id="mask-30" fill="white">
+                            <use xlink:href="#path-29"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-30)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 170.000000)" filter="url(#filter-31)">
+                    <g>
+                        <mask id="mask-33" fill="white">
+                            <use xlink:href="#path-32"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-33)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 307.000000)" filter="url(#filter-34)">
+                    <g>
+                        <mask id="mask-36" fill="white">
+                            <use xlink:href="#path-35"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-36)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 442.000000)" filter="url(#filter-37)">
+                    <g>
+                        <mask id="mask-39" fill="white">
+                            <use xlink:href="#path-38"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-39)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 581.000000)" filter="url(#filter-40)">
+                    <g>
+                        <mask id="mask-42" fill="white">
+                            <use xlink:href="#path-41"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-42)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 718.000000)" filter="url(#filter-43)">
+                    <g>
+                        <mask id="mask-45" fill="white">
+                            <use xlink:href="#path-44"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-45)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(1155.000000, 857.000000)" filter="url(#filter-46)">
+                    <g>
+                        <mask id="mask-48" fill="white">
+                            <use xlink:href="#path-47"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-48)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(796.000000, 170.000000)" filter="url(#filter-49)">
+                    <g>
+                        <mask id="mask-51" fill="white">
+                            <use xlink:href="#path-50"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-51)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(796.000000, 307.000000)" filter="url(#filter-52)">
+                    <g>
+                        <mask id="mask-54" fill="white">
+                            <use xlink:href="#path-53"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-54)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(796.000000, 442.000000)" filter="url(#filter-55)">
+                    <g>
+                        <mask id="mask-57" fill="white">
+                            <use xlink:href="#path-56"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-57)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(796.000000, 581.000000)" filter="url(#filter-58)">
+                    <g>
+                        <mask id="mask-60" fill="white">
+                            <use xlink:href="#path-59"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-60)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="icon/navigation/arrow_downward_24px" transform="translate(796.000000, 718.000000)" filter="url(#filter-61)">
+                    <g>
+                        <mask id="mask-63" fill="white">
+                            <use xlink:href="#path-62"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="Group" mask="url(#mask-63)" fill="#FFFFFF">
+                            <g id="↳-Color">
+                                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="Discover-Data-sets" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="26.3579102" y="114">Discover Data sets</tspan>
+                </text>
+                <text id="Mined-AWS-Marketplac" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="2.18945312" y="247">Mined AWS Marketplace / </tspan>
+                    <tspan x="15.987793" y="266">Public AWS Data Lake</tspan>
+                </text>
+                <text id="Hosted-Data-on-S3" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="26.3852539" y="530">Hosted Data on S3</tspan>
+                </text>
+                <text id="Cleaned-/-Explored-d" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="8.13671875" y="374">Cleaned / Explored data </tspan>
+                    <tspan x="18.4384766" y="393">using Python Jupyter </tspan>
+                    <tspan x="56.0805664" y="412">notebook</tspan>
+                </text>
+                <text id="Trained-Predictor-us" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="10.8413086" y="658">Trained Predictor using </tspan>
+                    <tspan x="31.137207" y="677">Amazon Forecast</tspan>
+                </text>
+                <text id="Reviewed-UX-/-UI-moc" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="750.861816" y="108">Reviewed UX / UI </tspan>
+                    <tspan x="777.351074" y="127">mockups</tspan>
+                </text>
+                <text id="Initialized-Angular" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="746.804688" y="230">Initialized Angular </tspan>
+                    <tspan x="762.407715" y="249">applications / </tspan>
+                    <tspan x="744.794922" y="268">Implemented style </tspan>
+                    <tspan x="779.172852" y="287">patterns</tspan>
+                </text>
+                <text id="Created-an-Express-a" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="742.455078" y="376">Created an Express </tspan>
+                    <tspan x="740.462402" y="395">application to serve </tspan>
+                    <tspan x="731.603027" y="414">the Angular static files</tspan>
+                </text>
+                <text id="Created-an-API-to-fe" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="729.336914" y="658">Created an API to fetch </tspan>
+                    <tspan x="754.88623" y="677">objects from S3</tspan>
+                </text>
+                <text id="Created-cloropleth-a" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="732.555664" y="785">Created cloropleth and </tspan>
+                    <tspan x="746.189941" y="804">bubble maps using </tspan>
+                    <tspan x="744.10498" y="823">Apple mobility data</tspan>
+                </text>
+                <text id="Provisioned-Bitbucke" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="374.44873" y="110">Provisioned Bitbucket </tspan>
+                    <tspan x="388.824707" y="129">project and repos</tspan>
+                </text>
+                <text id="Linked-Bitbucket-pro" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="391.494141" y="247">Linked Bitbucket </tspan>
+                    <tspan x="377.101074" y="266">project to Jira project</tspan>
+                </text>
+                <text id="Granted-users-access" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="376.602051" y="384">Granted users access </tspan>
+                    <tspan x="406.912598" y="403">to Bitbucket</tspan>
+                </text>
+                <text id="Provisioned-Jira-ins" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="395.708496" y="502">Provisioned Jira </tspan>
+                    <tspan x="379.223633" y="521">instance and project </tspan>
+                    <tspan x="386.76709" y="540">and granted users </tspan>
+                    <tspan x="426.15918" y="559">access</tspan>
+                </text>
+                <text id="Implemented-CI/CD-by" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="372.021973" y="648">Implemented CI/CD by </tspan>
+                    <tspan x="380.583984" y="667">creating a Bitbucket </tspan>
+                    <tspan x="420.912598" y="686">pipeline</tspan>
+                </text>
+                <text id="Provisioned-an-S3-bu" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="388.523926" y="785">Provisioned an S3 </tspan>
+                    <tspan x="372.223633" y="804">bucket in AWS to store </tspan>
+                    <tspan x="401.105469" y="823">build artifacts</tspan>
+                </text>
+                <text id="Provisioned-an-Elast" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="374.872559" y="912">Provisioned an Elastic </tspan>
+                    <tspan x="375.214355" y="931">Beanstalk application </tspan>
+                    <tspan x="377.371094" y="950">and environments to </tspan>
+                    <tspan x="382.258789" y="969">deploy/host project </tspan>
+                    <tspan x="394.433594" y="988">web application</tspan>
+                </text>
+                <text id="Created-line-graphs" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="742.385254" y="511">Created line graphs </tspan>
+                    <tspan x="750.88916" y="530">using economic / </tspan>
+                    <tspan x="757.414062" y="549">predictive data</tspan>
+                </text>
+                <text id="Create-Information-/" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1097.85107" y="383">Create Information / </tspan>
+                    <tspan x="1094.5835" y="402">User flows for project </tspan>
+                    <tspan x="1154.85596" y="421">site </tspan>
+                </text>
+                <text id="Lead-design-sprint-f" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1093.43848" y="237">Lead design sprint for </tspan>
+                    <tspan x="1083.24609" y="256">problem exploration and </tspan>
+                    <tspan x="1129.21094" y="275">solutioning</tspan>
+                </text>
+                <text id="Sketch-and-wireframe" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1093.30859" y="656">Sketch and wireframe </tspan>
+                    <tspan x="1108.00928" y="675">project pages / UI</tspan>
+                </text>
+                <text id="Create-hi-fidelity-m" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1111.04443" y="785">Create hi-fidelity </tspan>
+                    <tspan x="1086.40771" y="804">mockups and prototype </tspan>
+                    <tspan x="1125.29053" y="823">with desired </tspan>
+                    <tspan x="1124.21729" y="842">functionality</tspan>
+                </text>
+                <text id="Create-style-guide-f" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1093.93896" y="530">Create style guide for </tspan>
+                    <tspan x="1153.85596" y="549">site</tspan>
+                </text>
+                <text id="Conduct-Dev-Design-r" font-family="OpenSans-Semibold, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="1099.54297" y="922">Conduct Dev Design </tspan>
+                    <tspan x="1107.60938" y="941">reviews to ensure </tspan>
+                    <tspan x="1144.07227" y="960">proper </tspan>
+                    <tspan x="1112.60645" y="979">implementation</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

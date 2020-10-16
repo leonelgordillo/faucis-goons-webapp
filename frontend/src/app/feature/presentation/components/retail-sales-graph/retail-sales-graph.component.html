@@ -2,12 +2,12 @@
     <div class="graph-elements">
         <div class="category-filter">
             <div>
-                <span color="primary" class="legend-text text-dark-blue">Category</span>
+                <span color="primary" class="legend-text text-dark-blue">Retail Sector</span>
             </div>
             <mat-form-field appearance="fill">
-                <mat-select>
-                  <mat-option *ngFor="let category of categories" [value]="category.value">
-                    {{category.viewValue}}
+                <mat-select [(ngModel)]="selectedSector" (selectionChange)="updateSectorData()">
+                  <mat-option *ngFor="let sector of retailSectors" [value]="sector">
+                    {{sector}}
                   </mat-option>
                 </mat-select>
               </mat-form-field>
@@ -17,7 +17,6 @@
                 <span class="legend-text text-dark-blue">Transportation Type</span>
             </div>
             <div class="legend-elements">
-                <span class="all dot"></span> <span class="category-text">All</span>
                 <span class="walking dot"></span> <span class="category-text">Walking</span>
                 <span class="driving dot"></span> <span class="category-text">Driving</span>
                 <span class="transit dot"></span> <span class="category-text">Transit</span>

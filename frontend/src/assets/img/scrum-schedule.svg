@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1255px" height="479px" viewBox="0 0 1255 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Predicted-Mobility_-harris" transform="translate(-102.000000, -645.000000)">
+            <g id="Group-8" transform="translate(102.000000, 645.000000)">
+                <rect id="Rectangle" fill="#C9F1E3" opacity="0.536830357" x="0" y="50" width="168" height="429"></rect>
+                <rect id="Rectangle" fill="#84D5CA" opacity="0.536830357" x="168" y="50" width="333" height="429"></rect>
+                <rect id="Rectangle" fill="#59B4B8" opacity="0.536830357" x="501" y="50" width="254" height="429"></rect>
+                <rect id="Rectangle" fill="#246E95" opacity="0.420805432" x="755" y="50" width="332" height="429"></rect>
+                <rect id="Rectangle" fill="#1B2A6D" opacity="0.420805432" transform="translate(1171.000000, 264.500000) scale(-1, 1) translate(-1171.000000, -264.500000) " x="1087" y="50" width="168" height="429"></rect>
+                <text id="Problem-Exploration" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="0" y="15">Problem Exploration</tspan>
+                    <tspan x="0" y="34">&amp; Solutioning</tspan>
+                </text>
+                <text id="PI-Planning" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="67" y="401">PI Planning</tspan>
+                </text>
+                <text id="Sprint-1" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="199" y="15">Sprint 1</tspan>
+                </text>
+                <text id="Sprint-2" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="537" y="15">Sprint 2</tspan>
+                </text>
+                <text id="Sprint-3" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="790" y="15">Sprint 3</tspan>
+                </text>
+                <text id="Review-and-Testing" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="1087" y="15">Review and Testing</tspan>
+                </text>
+                <text id="Standups" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="337" y="135">Standups</tspan>
+                </text>
+                <text id="Standups" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="635" y="135">Standups</tspan>
+                </text>
+                <text id="Standups" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="902" y="135">Standups</tspan>
+                </text>
+                <text id="Retrospective-and-Gr" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="301" y="401">Retrospective and Grooming</tspan>
+                </text>
+                <text id="Retrospective-and-Gr" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="553" y="401">Retrospective and Grooming</tspan>
+                </text>
+                <text id="Retrospective" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="983" y="401">Retrospective</tspan>
+                </text>
+                <text id="SEP17" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="2" y="262">SEP17</tspan>
+                </text>
+                <text id="SEP19" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="85" y="262">SEP19</tspan>
+                </text>
+                <text id="SEP21" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="168" y="262">SEP21</tspan>
+                </text>
+                <text id="SEP22" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="252" y="262">SEP22</tspan>
+                </text>
+                <text id="SEP23" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="335" y="262">SEP23</tspan>
+                </text>
+                <text id="SEP26" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="418" y="262">SEP26</tspan>
+                </text>
+                <text id="SEP28" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="501" y="262">SEP28</tspan>
+                </text>
+                <text id="SEP30" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="585" y="262">SEP30</tspan>
+                </text>
+                <text id="OCT03" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="668" y="262">OCT03</tspan>
+                </text>
+                <text id="OCT05" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="755" y="262">OCT05</tspan>
+                </text>
+                <text id="OCT07" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="842" y="262">OCT07</tspan>
+                </text>
+                <text id="OCT10" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="929" y="262">OCT10</tspan>
+                </text>
+                <text id="OCT12" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="1017" y="262">OCT12</tspan>
+                </text>
+                <text id="OCT14" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="1104" y="262">OCT14</tspan>
+                </text>
+                <text id="OCT15" font-family="Open Sans, sans-serif" font-size="14" font-weight="normal" fill="#212121">
+                    <tspan x="1191" y="262">OCT15</tspan>
+                </text>
+                <circle id="Oval" fill="#212121" cx="185" cy="279" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="272" cy="238" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="355" cy="238" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="438" cy="238" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="438" cy="276" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="690" cy="276" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="1040" cy="276" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="521" cy="238" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="605" cy="238" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="690" cy="237" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="777" cy="237" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="864" cy="237" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="949" cy="237" r="4"></circle>
+                <circle id="Oval" fill="#212121" cx="1039" cy="237" r="4"></circle>
+                <line x1="105.5" y1="382.5" x2="184.5" y2="279.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="273" y1="239" x2="368.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="356" y1="239" x2="368.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="394.75" y1="382.75" x2="438.5" y2="275.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="645.75" y1="383.75" x2="689.5" y2="276.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="1027.125" y1="383.875" x2="1039.5" y2="276.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="521.125" y1="237.875" x2="664.5" y2="145.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="605.125" y1="237.875" x2="664.5" y2="145.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="690.125" y1="237.875" x2="664.5" y2="145.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="777.1875" y1="237.8125" x2="932.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="864.1875" y1="237.8125" x2="932.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="949.1875" y1="234.8125" x2="932.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="1039.1875" y1="237.8125" x2="932.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+                <line x1="439" y1="239" x2="368.5" y2="144.5" id="Line-9" stroke="#212121" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

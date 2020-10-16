@@ -1,0 +1,1262 @@
+[
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Jan",
+        "sales": "105634.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Jan",
+        "sales": "97637.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Jan",
+        "sales": "7997.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Jan",
+        "sales": "18299.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Jan",
+        "sales": "10139.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Jan",
+        "sales": "8160.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Jan",
+        "sales": "33922.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Jan",
+        "sales": "29656.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Jan",
+        "sales": "64384.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Jan",
+        "sales": "57495.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Jan",
+        "sales": "5114.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Jan",
+        "sales": "30017.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Jan",
+        "sales": "24715.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Jan",
+        "sales": "42557.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Jan",
+        "sales": "22503.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Jan",
+        "sales": "16124.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Jan",
+        "sales": "663.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Jan",
+        "sales": "3426.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Jan",
+        "sales": "3203.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Jan",
+        "sales": "6698.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Jan",
+        "sales": "59963.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Jan",
+        "sales": "11032.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Jan",
+        "sales": "48931.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Jan",
+        "sales": "42061.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Jan",
+        "sales": "6870.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Jan",
+        "sales": "11984.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Jan",
+        "sales": "68101.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Jan",
+        "sales": "60985.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Jan",
+        "sales": "2096.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Jan",
+        "sales": "65554.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Feb",
+        "sales": "105229.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Feb",
+        "sales": "97423.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Feb",
+        "sales": "7806.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Feb",
+        "sales": "18189.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Feb",
+        "sales": "10133.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Feb",
+        "sales": "8056.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Feb",
+        "sales": "33314.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Feb",
+        "sales": "29233.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Feb",
+        "sales": "64329.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Feb",
+        "sales": "57337.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Feb",
+        "sales": "5145.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Feb",
+        "sales": "30006.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Feb",
+        "sales": "24802.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Feb",
+        "sales": "41302.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Feb",
+        "sales": "22135.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Feb",
+        "sales": "16016.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Feb",
+        "sales": "644.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Feb",
+        "sales": "3399.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Feb",
+        "sales": "3161.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Feb",
+        "sales": "6714.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Feb",
+        "sales": "59895.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Feb",
+        "sales": "11013.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Feb",
+        "sales": "48882.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Feb",
+        "sales": "41996.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Feb",
+        "sales": "6886.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Feb",
+        "sales": "11877.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Feb",
+        "sales": "68924.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Feb",
+        "sales": "61620.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Feb",
+        "sales": "2107.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Feb",
+        "sales": "65359.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Mar",
+        "sales": "77997.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Mar",
+        "sales": "70902.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Mar",
+        "sales": "7095.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Mar",
+        "sales": "14538.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Mar",
+        "sales": "7897.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Mar",
+        "sales": "6641.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Mar",
+        "sales": "33544.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Mar",
+        "sales": "29509.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Mar",
+        "sales": "81607.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Mar",
+        "sales": "73714.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Mar",
+        "sales": "6021.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Mar",
+        "sales": "31552.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Mar",
+        "sales": "27700.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Mar",
+        "sales": "34483.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Mar",
+        "sales": "11362.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Mar",
+        "sales": "7647.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Mar",
+        "sales": "283.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Mar",
+        "sales": "1542.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Mar",
+        "sales": "1691.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Mar",
+        "sales": "5557.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Mar",
+        "sales": "64986.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Mar",
+        "sales": "8607.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Mar",
+        "sales": "56379.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Mar",
+        "sales": "48246.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Mar",
+        "sales": "8133.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Mar",
+        "sales": "10230.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Mar",
+        "sales": "72365.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Mar",
+        "sales": "65332.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Mar",
+        "sales": "1974.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Mar",
+        "sales": "45728.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Apr",
+        "sales": "68468.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Apr",
+        "sales": "61763.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Apr",
+        "sales": "6705.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Apr",
+        "sales": "7792.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Apr",
+        "sales": "4034.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Apr",
+        "sales": "3758.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Apr",
+        "sales": "32815.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Apr",
+        "sales": "28361.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Apr",
+        "sales": "71116.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Apr",
+        "sales": "63869.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Apr",
+        "sales": "5573.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Apr",
+        "sales": "26952.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Apr",
+        "sales": "24700.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Apr",
+        "sales": "26048.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Apr",
+        "sales": "3013.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Apr",
+        "sales": "1951.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Apr",
+        "sales": "81.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Apr",
+        "sales": "470.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Apr",
+        "sales": "427.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Apr",
+        "sales": "3667.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Apr",
+        "sales": "56129.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Apr",
+        "sales": "6181.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Apr",
+        "sales": "49948.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Apr",
+        "sales": "42456.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Apr",
+        "sales": "7492.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Apr",
+        "sales": "7591.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Apr",
+        "sales": "79143.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Apr",
+        "sales": "73479.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Apr",
+        "sales": "1937.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Apr",
+        "sales": "30032.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "May",
+        "sales": "101537.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "May",
+        "sales": "93286.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "May",
+        "sales": "8251.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "May",
+        "sales": "11827.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "May",
+        "sales": "7143.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "May",
+        "sales": "4684.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "May",
+        "sales": "37004.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "May",
+        "sales": "32384.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "May",
+        "sales": "72658.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "May",
+        "sales": "64667.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "May",
+        "sales": "6051.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "May",
+        "sales": "27785.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "May",
+        "sales": "24824.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "May",
+        "sales": "29184.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "May",
+        "sales": "8440.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "May",
+        "sales": "5463.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "May",
+        "sales": "130.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "May",
+        "sales": "1037.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "May",
+        "sales": "1483.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "May",
+        "sales": "6514.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "May",
+        "sales": "59492.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "May",
+        "sales": "8431.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "May",
+        "sales": "51061.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "May",
+        "sales": "42946.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "May",
+        "sales": "8115.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "May",
+        "sales": "9091.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "May",
+        "sales": "85256.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "May",
+        "sales": "79351.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "May",
+        "sales": "2017.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "May",
+        "sales": "39430.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Jun",
+        "sales": "110723.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Jun",
+        "sales": "101986.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Jun",
+        "sales": "8737.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Jun",
+        "sales": "16416.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Jun",
+        "sales": "9930.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Jun",
+        "sales": "6486.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Jun",
+        "sales": "37406.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Jun",
+        "sales": "32641.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Jun",
+        "sales": "71502.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Jun",
+        "sales": "63454.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Jun",
+        "sales": "6054.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Jun",
+        "sales": "29786.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Jun",
+        "sales": "26076.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Jun",
+        "sales": "33564.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Jun",
+        "sales": "16857.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Jun",
+        "sales": "11218.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Jun",
+        "sales": "262.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Jun",
+        "sales": "2165.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Jun",
+        "sales": "2721.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Jun",
+        "sales": "8325.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Jun",
+        "sales": "61256.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Jun",
+        "sales": "9441.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Jun",
+        "sales": "51815.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Jun",
+        "sales": "43676.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Jun",
+        "sales": "8139.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Jun",
+        "sales": "11088.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Jun",
+        "sales": "82900.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Jun",
+        "sales": "76398.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Jun",
+        "sales": "2009.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Jun",
+        "sales": "50139.0"
+    },
+    {
+        "NAICS": "441",
+        "business_sector": "Motor vehicle and parts dealers",
+        "month": "Jul",
+        "sales": "109664.0"
+    },
+    {
+        "NAICS": "4411,4412",
+        "business_sector": "Automobile and other motor vehicle dealers",
+        "month": "Jul",
+        "sales": "101069.0"
+    },
+    {
+        "NAICS": "4413",
+        "business_sector": "Automotive parts, acc., and tire stores",
+        "month": "Jul",
+        "sales": "8595.0"
+    },
+    {
+        "NAICS": "442,443",
+        "business_sector": "Furniture, home furn, electronics, and appliance stores",
+        "month": "Jul",
+        "sales": "17853.0"
+    },
+    {
+        "NAICS": "442",
+        "business_sector": "Furniture and home furnishings stores",
+        "month": "Jul",
+        "sales": "10022.0"
+    },
+    {
+        "NAICS": "443",
+        "business_sector": "Electronics and appliance stores",
+        "month": "Jul",
+        "sales": "7831.0"
+    },
+    {
+        "NAICS": "444",
+        "business_sector": "Building mat. and garden equip. and supplies dealers",
+        "month": "Jul",
+        "sales": "36526.0"
+    },
+    {
+        "NAICS": "4441",
+        "business_sector": "Building mat. and supplies dealers",
+        "month": "Jul",
+        "sales": "31861.0"
+    },
+    {
+        "NAICS": "445",
+        "business_sector": "Food and beverage stores",
+        "month": "Jul",
+        "sales": "71896.0"
+    },
+    {
+        "NAICS": "4451",
+        "business_sector": "Grocery stores",
+        "month": "Jul",
+        "sales": "63916.0"
+    },
+    {
+        "NAICS": "4453",
+        "business_sector": "Beer, wine and liquor stores",
+        "month": "Jul",
+        "sales": "5995.0"
+    },
+    {
+        "NAICS": "446",
+        "business_sector": "Health and personal care stores",
+        "month": "Jul",
+        "sales": "31129.0"
+    },
+    {
+        "NAICS": "44611",
+        "business_sector": "Pharmacies and drug stores",
+        "month": "Jul",
+        "sales": "26573.0"
+    },
+    {
+        "NAICS": "447",
+        "business_sector": "Gasoline stations",
+        "month": "Jul",
+        "sales": "35046.0"
+    },
+    {
+        "NAICS": "448",
+        "business_sector": "Clothing and clothing access. stores",
+        "month": "Jul",
+        "sales": "17234.0"
+    },
+    {
+        "NAICS": "4481",
+        "business_sector": "Clothing stores",
+        "month": "Jul",
+        "sales": "11620.0"
+    },
+    {
+        "NAICS": "44811",
+        "business_sector": "Men's clothing stores",
+        "month": "Jul",
+        "sales": "395.0"
+    },
+    {
+        "NAICS": "44812",
+        "business_sector": "Women's clothing stores",
+        "month": "Jul",
+        "sales": "2499.0"
+    },
+    {
+        "NAICS": "4482",
+        "business_sector": "Shoe stores",
+        "month": "Jul",
+        "sales": "2365.0"
+    },
+    {
+        "NAICS": "451",
+        "business_sector": "Sporting goods, hobby, musical instrument, and book stores",
+        "month": "Jul",
+        "sales": "7881.0"
+    },
+    {
+        "NAICS": "452",
+        "business_sector": "General merchandise stores",
+        "month": "Jul",
+        "sales": "60600.0"
+    },
+    {
+        "NAICS": "4521",
+        "business_sector": "Department stores",
+        "month": "Jul",
+        "sales": "9627.0"
+    },
+    {
+        "NAICS": "4529",
+        "business_sector": "Other general merchandise stores",
+        "month": "Jul",
+        "sales": "50973.0"
+    },
+    {
+        "NAICS": "45291",
+        "business_sector": "Warehouse clubs and superstores",
+        "month": "Jul",
+        "sales": "43143.0"
+    },
+    {
+        "NAICS": "45299",
+        "business_sector": "All other gen. merchandise stores",
+        "month": "Jul",
+        "sales": "7830.0"
+    },
+    {
+        "NAICS": "453",
+        "business_sector": "Miscellaneous stores retailers",
+        "month": "Jul",
+        "sales": "11426.0"
+    },
+    {
+        "NAICS": "454",
+        "business_sector": "Nonstore retailers",
+        "month": "Jul",
+        "sales": "83117.0"
+    },
+    {
+        "NAICS": "4541",
+        "business_sector": "Electronic shopping and mail order houses",
+        "month": "Jul",
+        "sales": "75712.0"
+    },
+    {
+        "NAICS": "45431",
+        "business_sector": "Fuel dealers",
+        "month": "Jul",
+        "sales": "2008.0"
+    },
+    {
+        "NAICS": "722",
+        "business_sector": "Food services and drinking places",
+        "month": "Jul",
+        "sales": "52186.0"
+    }
+]
