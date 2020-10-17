@@ -1,0 +1,67 @@
+.container {
+    position: absolute;
+}
+
+.county {
+    stroke: grey;
+    stroke-width: 0.3;
+    width: 300px;
+}
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 140px;
+    height: 55px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: white;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 8px;
+    pointer-events: none;
+}
+  
+#legend-container {
+    fill: white;
+    stroke: grey;
+    stroke-width: 2;
+}
+  
+.bubble {
+    fill-opacity: .5;
+    stroke: #fff;
+    stroke-width: .5px;
+    fill: red;
+}
+  
+.slider {
+    width: 150px;
+}
+
+.slider-group {
+    display: inline-flex;
+}
+
+.mobility-buttons {
+    margin: 10px
+}
+
+.filter-elements {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.county-date {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mat-button-toggle-appearance-standard {
+    line-height: 30px !important;
+}

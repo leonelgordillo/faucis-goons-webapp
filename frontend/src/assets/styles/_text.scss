@@ -1,0 +1,35 @@
+// Colors
+.text-dark-blue {
+    color: $dark-blue;
+}
+
+.text-vibrant-blue {
+    color: $vibrant-blue;
+}
+
+.text-deep-purple {
+    color: $deep-purple; 
+}
+
+.text-tech-red {
+    color: $tech-red;
+}
+
+.text-zest-green {
+    color: $zest-green;
+}
+
+// Links
+a {
+    color: $vibrant-blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+}
+
+body {
+    color: #444444;
+}

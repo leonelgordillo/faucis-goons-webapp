@@ -1,0 +1,33 @@
+
+<nav mat-tab-nav-bar>
+    <div>
+        <h1 class=fgoons-icon>FG</h1>
+    </div>
+    <a mat-tab-link
+    class="nav-button"
+    *ngFor="let link of navLinks"
+    (click)="activeLink = link"
+    [active]="activeLink == link"
+    
+    [routerLink]="link.link">
+    <span class="prefix">{{link.prefix}}</span>
+    {{link.label}}
+</a>
+</nav>
+
+<div class="arrow-buttons">
+    <div>
+        <button *ngIf="previousLink"
+        mat-button class="arrow-left-button"
+        [routerLink]="previousLink.link">
+            <mat-icon class="arrow-icon">arrow_backward</mat-icon>
+        </button>
+        
+        <button *ngIf="nextLink"
+        mat-button class="arrow-right-button"
+        [routerLink]="nextLink.link">
+            <mat-icon class="arrow-icon">arrow_forward</mat-icon>
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+.nav-button {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prefix {
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.mat-tab-label-active {
+  opacity: 1;
+}
+
+.arrow-buttons {
+  z-index: 100;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 230px;
+  width: 100%;
+}
+
+.arrow-left-button {
+  margin: 10px;
+  text-align: center;
+}
+
+.arrow-right-button {
+  margin: 10px;
+  text-align: center;
+  float: right;
+}
+.arrow-icon {
+  font-size: 25px;
+  height: auto;
+  width: 25px;
+  color:white;
+  background-color: #1D4C81;
+  border-radius: 50%;
+}
+
+.fgoons-icon {
+  font: revert;
+  padding-top: 15px;
+  padding-left: 15px;
+}

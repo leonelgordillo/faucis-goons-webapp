@@ -1,0 +1,203 @@
+.div-block {
+    display: block;
+    width: 1400px;
+    height: 600px;
+    min-width: 375px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-color: #b4b4b4;
+  }
+  
+  .section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 16px;
+    padding-left: 16px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .div-block-2 {
+    width: 30%;
+    height: 5%;
+    min-height: 30px;
+    margin: 12px;
+    padding: 0px;
+    background-color: #fff;
+  }
+  
+  .div-block-3 {
+    width: 98%;
+    height: 81%;
+    margin: 12px;
+    background-color: #fff;
+  }
+  
+  .div-block-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  
+  .div-block-5 {
+    height: 600px;
+  }
+  
+  .div-block-6 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+  
+  .div-block-7 {
+    position: static;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  
+  .heading {
+    float: none;
+    clear: none;
+  }
+  
+  .columns {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .heading-2 {
+    padding-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+  }
+  
+  .text-block {
+    padding-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+  }
+  
+  .paragraph {
+    padding-top: 27px;
+    padding-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  
+  .column {
+    top: auto;
+    bottom: auto;
+    height: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .div-block-8 {
+    height: 183px;
+    background-color: #d6d6d6;
+  }
+  
+  .column-2 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  
+  .bio-paragraph-right {
+    position: static;
+    bottom: auto;
+    width: auto;
+    margin-bottom: 0px;
+    float: none;
+    clear: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+    text-align: right;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+  
+  .bios-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .bio-photo {
+    // margin-top: 22px;
+    width: 230px;
+    height: 230px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .description {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .leo {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .header-text {
+    padding-top: 40px;
+  }
+  
+  .fauci-s-goons {
+    font-family: 'Open Sans', sans-serif;
+    color: #3a7aa8;
+    font-size: 63px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .bio {
+    width: 30%;
+  }
+  
+  .name-right {
+    margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3a7aa8;
+    font-size: 24px;
+    text-align: right;
+  }
+  
+  .bio-paragraph-left {
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #212121;
+  }
+  
+  .name-left {
+    margin-top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #3a7aa8;
+    font-size: 24px;
+  }

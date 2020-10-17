@@ -1,0 +1,28 @@
+.heat-map-page {
+    display: flex;
+}
+
+.title {
+    font-size: 70px;
+    line-height: 80px;
+    padding-left: 20px;
+}
+
+.description {
+    background-color: #FFFFFF;
+    padding-left: 40px;
+}
+
+.heat-map{
+    display: flex;
+    justify-content: left;
+    background-color: #FFFFFF;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.map-description {
+    padding: 10px;
+    padding-right: 45px;
+    padding-left: 80px;
+}

@@ -1,0 +1,47 @@
+<div class="container" style="position: relative;">
+
+    <div class="col-md-12 columns">
+        <div class="col-md-5 left-column">
+            <div class="column-text">
+                <div class="intro-text">
+                    <h2>
+                        <b>
+                            Application of Amazon Forecast AI Model
+                        </b>
+                    </h2>
+                </div>
+                <div class="subtext">
+                    <h3 style="line-height: 24px; font-size: 16px;">
+                        The forecasted data can be used to infer upcoming mobility trends within counties, which we have
+                        found generally correlated with retail sales for certain industries. Forecasted relative
+                        mobility is predicted at the county level based on its time series driving data. Trained on the
+                        DeepAR algorithm with a day frequency rate, the prediction model reflects increases in mobility
+                        affected by weekends, seasonality, and responses to the changing COVID restrictions
+                    </h3>
+
+                    <p style="line-height: 18px; font-size: 15px;">
+                        Three prediction quantiles - p[0.1], p[0.5], p[0.9] - are displayed to indicate the level of
+                        uncertainty in each forecast. To determine which to use, consider the costs of
+                        under/over-estimation (e.g. for the p[0.1] prediction, the true value is expected to be the
+                        lower than the predicted value 10% of the time)
+                    </p>
+                    <p style="line-height: 18px; font-size: 15px;">
+                        Results have an average 4% error in either direction. Future improvements include addition of
+                        associated COVID time series data and county metadata (economic, demographic).
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-7" style="top: -40px;">
+            <div class="prediction-graph">
+                <app-prediction-graph></app-prediction-graph>
+            </div>
+            <div class="mat-table">
+                <app-prediction-table></app-prediction-table>
+            </div>
+        </div>
+    </div>
+
+
+</div>
