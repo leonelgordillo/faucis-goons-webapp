@@ -9,8 +9,6 @@ export class DataService {
   private countySource = new Subject();
   currentCounty = this.countySource.asObservable();
 
-  private ;
-
   changeCounty(county: string) {
     this.countySource.next(county)
   }

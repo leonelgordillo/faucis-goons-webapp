@@ -10,8 +10,11 @@
     justify-content: left;
 }
 
+.legend {
+  width: 100%;
+}
+
 .legend-elements {
-    padding-top: 11px
 }
 
 .legend-text {
@@ -40,6 +43,13 @@
     padding-left: 10px;
   }
 
+  .dotted-line {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+
   .all {
     background-color: darkseagreen;
   }
@@ -60,4 +70,11 @@
 
   .mat-select {
       font-size: 12px;
+  }
+  
+  hr {
+    border: none;
+    margin-left: 50px;
+    margin-bottom: 4px;
+    border-bottom: 4px dotted black;
   }

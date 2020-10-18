@@ -22,7 +22,7 @@ export class RetailSalesGraph implements OnInit {
     { data: [], label: 'Walking', yAxisID: "Mobility", lineTension: 0 },
     { data: [], label: 'Driving', yAxisID: "Mobility", lineTension: 0 },
     { data: [], label: 'Transit', yAxisID: "Mobility", lineTension: 0 },
-    { data: [], label: 'Sector', lineTension: 0, borderDash: [10,5] },
+    { data: [], label: 'Sector', lineTension: 0, borderDash: [5,5] },
 
 
 
@@ -50,11 +50,6 @@ export class RetailSalesGraph implements OnInit {
           display: true,
           labelString: 'Relative Mobility'
         }
-        // ticks: {
-        //   max: 10,
-        //   min: 0
-        // },
-
       }]
     }
 
@@ -89,12 +84,10 @@ export class RetailSalesGraph implements OnInit {
     let filteredArr = retailData.filter((obj) => {
       return obj.month == 'Jan'
     })
-    console.log(filteredArr.length)
     let sectors = filteredArr.map((obj) => {
       return obj.business_sector;
     })
     this.retailSectors = sectors;
-    console.log(sectors);
 
     let walkingData = mobilityData.filter((obj) => {
       return obj.transportation_type == "walking";

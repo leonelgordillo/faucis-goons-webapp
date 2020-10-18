@@ -101,8 +101,6 @@ export class PredictionGraphComponent implements OnInit {
       if (this.serializedStartDate.valid && this.serializedEndDate.valid){
 
 
-
-        console.log("Valid Dates and county!");
         this.predictionService.getCountyMobilityPrediction(this.selectedCounty, this.serializedStartDate.value, this.serializedEndDate.value)
           .subscribe((data) => {
 
@@ -126,9 +124,6 @@ export class PredictionGraphComponent implements OnInit {
               let formattedDate = newDate.toLocaleDateString("en-US", options) 
               return formattedDate;
             });
-            // this.lineChartLabels[1] = this.p50.map((v) => v.Timestamp);
-            // this.lineChartLabels[2] = this.p90.map((v) => v.Timestamp);
-            // console.log(data)
           })
 
       } else {

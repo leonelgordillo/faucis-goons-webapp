@@ -741,7 +741,7 @@ export class CountiesMapComponent implements OnInit {
   }
 
   valueChange(e) {
-    console.log(e);
+    // console.log(e);
     this.value = e.value;
     this.date = formatDate(new Date(this.value), 'yyyy-MM-dd', 'en');
     // this.location.go('counties/' + this.selectedState + '/' + this.type + '/' + this.scale + '/' + this.metric + '/' + this.date);
@@ -751,7 +751,7 @@ export class CountiesMapComponent implements OnInit {
   }
 
   metricChange(e) {
-    console.log(e)
+    // console.log(e)
     this.removeExistingMapFromParent();
     this.updateMap(false);
   }

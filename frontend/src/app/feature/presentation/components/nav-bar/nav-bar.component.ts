@@ -42,7 +42,7 @@ export class NavBarComponent implements OnInit {
       label: 'About Us',
       link: '/about-us',
       prefix: "06",
-      index: 4
+      index: 5
     },
   ];
 
