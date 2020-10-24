@@ -189,6 +189,9 @@ export class UsBubbleMapComponent implements OnInit {
         this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
         this.removeExistingMapFromParent();
         this.updateMap();
+      } else {
+        this.date = this.dateMin;
+        this.sliderValue = this.sliderMin;
       }
     }, 250)
   }

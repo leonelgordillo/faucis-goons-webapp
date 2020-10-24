@@ -35,7 +35,7 @@
   height: auto;
   width: 25px;
   color:white;
-  background-color: #1D4C81;
+  background-color: #3a7aa8;
   border-radius: 50%;
 }
 
@@ -43,4 +43,14 @@
   font: revert;
   padding-top: 15px;
   padding-left: 15px;
+  padding-right: 10px;
+}
+
+.mat-ink-bar {
+  background-color: #3a7aa8 !important;
+}
+
+.nav-bar-buttons {
+  margin-left: auto;
+  margin-right: auto;
 }

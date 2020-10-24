@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-3 filter-elements">
+            <div class="col-md-6 filter-elements">
                     <span style="padding-bottom:10px">Mobility Type</span>
                     <div class="mobility-buttons">
                         <mat-button-toggle-group #group="matButtonToggleGroup" (change)="metricChange(false)"
@@ -30,7 +30,7 @@
                             </button>
                         </div>
                         <div style="text-align: center;width: 278px;">
-                            <span class="county-date"><b>{{date | date: "EEEE, MMM d, y"}}</b></span>
+                            <span class="county-date">{{date | date: "EEEE, MMM d, y"}}</span>
                         </div>
                     </div>
 

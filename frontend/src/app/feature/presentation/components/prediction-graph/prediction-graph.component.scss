@@ -8,6 +8,10 @@
     display: inline-flex;
   }
 
+  .county-select {
+    width: 175px;
+  }
+
   .line-graph-elements {
     padding-left: 50px;
     padding-right: 50px;
@@ -64,12 +68,24 @@
     }
 
     .filter-input {
-      width: 90%;
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 100%;
+      padding-right: 20px;
     }
 
     .date-picker {
       align-self: flex-end;
       padding-bottom: 3px;
+      width: 175px;
     }
+
+    .prediction-button {
+      background-color: #3a7aa8;
+      color: white;
+    }
+
+    .county-title {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      color: #3a7aa8;
+    }
+

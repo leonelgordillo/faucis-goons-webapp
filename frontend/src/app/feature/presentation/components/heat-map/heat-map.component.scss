@@ -1,5 +1,7 @@
 .heat-map-page {
     display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .title {
@@ -10,7 +12,7 @@
 
 .description {
     background-color: #FFFFFF;
-    padding-left: 40px;
+    // padding-left: 40px;
 }
 
 .heat-map{

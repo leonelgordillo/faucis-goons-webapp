@@ -62,9 +62,8 @@ div.tooltip {
     display: inline-block;
     position: relative;
     width: 100%;
-    // padding-bottom: 100%;
     vertical-align: top;
-    overflow: hidden;
+    text-align: end;
 }
 .svg-content {
     display: inline-block;
@@ -74,10 +73,13 @@ div.tooltip {
 }
 
 .date {
-    position: absolute;
     left: 675px;
     top: 170px;
     width:150px;
+    display: inline-grid;
+    margin-top: 150px;
+    padding-left: 50px;
+
 }
 
 .year {

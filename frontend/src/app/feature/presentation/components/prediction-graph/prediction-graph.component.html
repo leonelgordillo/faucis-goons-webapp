@@ -1,70 +1,63 @@
 <div class="prediction-graph">
+
   <div class="graph-elements">
     <div class="county-filter">
       <div class="county-input">
 
-        <div class="date-picker filter-input">
-          <mat-form-field filter-input>
-            <input matInput [min]="startMinDate" [max]="startMaxDate" [matDatepicker]="picker" placeholder="Start Date" (click)="picker.open()"
-              [formControl]="serializedStartDate" (dateChange)="updateEndMin($event)">
+        <div class="date-picker">
+          <mat-form-field class="filter-input">
+            <input matInput [min]="startMinDate" [max]="startMaxDate" [matDatepicker]="picker" placeholder="Start Date"
+              (click)="picker.open()" [formControl]="serializedStartDate" (dateChange)="updateEndMin($event)">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker [startAt]="startMinDate"></mat-datepicker>
           </mat-form-field>
         </div>
 
-        <div class="date-picker filter-input">
-          <mat-form-field filter-input>
-            <input matInput [min]="endMinDate" [max]="endMaxDate" [matDatepicker]="picker2" placeholder="End Date" (click)="picker2.open()"
-              [formControl]="serializedEndDate" (dateChange)="updateStartMax($event)">
+        <div class="date-picker">
+          <mat-form-field class="filter-input">
+            <input matInput [min]="endMinDate" [max]="endMaxDate" [matDatepicker]="picker2" placeholder="End Date"
+              (click)="picker2.open()" [formControl]="serializedEndDate" (dateChange)="updateStartMax($event)">
             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
             <mat-datepicker #picker2 [startAt]="endMaxDate"></mat-datepicker>
           </mat-form-field>
         </div>
 
         <div class="county-select">
-          <mat-form-field filter-input style="bottom: 2px;">
+          <mat-form-field style="bottom: 2px;" class="filter-input">
             <mat-select placeholder="Select County" [(ngModel)]="selectedCounty">
               <mat-option *ngFor="let county of counties" [value]="county">
                 {{county}}
               </mat-option>
             </mat-select>
-            </mat-form-field>
+          </mat-form-field>
         </div>
-      </div>
 
-      <div style="width: auto;">
-        <button color="primary" mat-stroked-button (click)="queryForecaster()">
-          Get Prediction
-        </button>
+        <div style="width: auto;">
+          <button class="prediction-button" mat-button (click)="queryForecaster()">
+            Get Prediction
+          </button>
+        </div>
+
       </div>
 
       <div>
-        <h2 style="padding-top: 20px; color: #3191AA;"><b>{{displayedCounty}}</b></h2>
+        <h2 class="county-title"><b>{{displayedCounty}}</b></h2>
       </div>
 
-
+      <div>
+        <h3>
+          Predicted Mobility
+        </h3>
+      </div>
 
     </div>
-    <!-- <div class="legend">
-            <div>
-                <span class="legend-text text-dark-blue">Transportation Type</span>
-            </div>
-            <div class="legend-elements">
-                <span class="all dot"></span> <span class="category-text">All</span>
-                <span class="walking dot"></span> <span class="category-text">Walking</span>
-                <span class="driving dot"></span> <span class="category-text">Driving</span>
-                <span class="transit dot"></span> <span class="category-text">Transit</span>
-    
-            </div>
-        </div> -->
   </div>
 
-  <div style="display: block;">
-    <canvas baseChart width="100" height="50" [datasets]="lineChartData" [labels]="lineChartLabels"
+  <div style="width: 125%;">
+    <canvas class="predict-graph" baseChart width="2" height="1" [datasets]="lineChartData" [labels]="lineChartLabels"
       [options]="lineChartOptions" [colors]="lineChartColors" [chartType]="lineChartType" [plugins]="lineChartPlugins"
       [legend]="lineChartLegend">
     </canvas>
   </div>
-
 
 </div>
