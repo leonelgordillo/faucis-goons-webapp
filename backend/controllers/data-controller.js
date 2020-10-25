@@ -1,23 +1,84 @@
 // Dependencies
 require('dotenv')
-const athenaExpress = require('../services/athena-service').athenaExpress;
 
-const query = `
-SELECT * FROM covid_testing_us_daily WHERE date = '20200819' limit 10;`
+const s3Service = require('../services/s3-service');
+const helper = require('../helpers/csv-helper');
+const fs = require('fs')
 
-function getQueryResults(req, res, next) {
-    athenaExpress
-        .query(query)
-        .then(results => {
-            console.log(results);
-            res.status(200).json(results)
-        })
-        .catch(error => {
-            console.log(error);
-            res.status(401)
+
+const getTxMobilityJson = async (req, res) => {
+
+    fileKey = `apple-mobility-adx/apple-mobility-trends_tx_counties.csv`;
+
+    let datasetFile;
+    let txMobilityJson;
+    let localFilepath = `./data/tx-mobility-data.json`;
+
+    if (fs.existsSync(localFilepath)) {
+        datasetFile = fs.readFileSync(localFilepath);
+        console.log("Found local dataset file")
+        txMobilityJson = JSON.parse(datasetFile.toString())
+    } else {
+        const s3Response = await s3Service.downloadDatasetFile(fileKey);
+        let csvString = s3Response.Body.toString();
+        if (!fs.existsSync("./data/")) {
+            fs.mkdirSync("./data")
+        }
+        txMobilityJson = await helper.convertCsvToJsonCounties(csvString)
+        const ws = fs.createWriteStream(localFilepath);
+        ws.write(JSON.stringify(txMobilityJson), (err) => {
+            if(err) {
+                console.error(err);
+                res.status(400).send({
+                    success: false,
+                    error: err
+                })
+                return;
+            } 
+
         });
+    }
+    console.log(txMobilityJson);
+    res.status(200).send(txMobilityJson);
+
+
 }
 
+const getUsMobilityJson = async (req, res) => {
+
+    fileKey = `apple-mobility-adx/apple-mobility-trends_usa_states.csv`;
+
+    let datasetFile;
+    let usMobilityJson;
+    let localFilepath = `./data/us-mobility-data.json`;
+
+    if (fs.existsSync(localFilepath)) {
+        datasetFile = fs.readFileSync(localFilepath);
+        console.log("Found local dataset file")
+        usMobilityJson = JSON.parse(datasetFile.toString())
+    } else {
+        const s3Response = await s3Service.downloadDatasetFile(fileKey);
+        let csvString = s3Response.Body.toString();
+        if (!fs.existsSync("./data/")) {
+            fs.mkdirSync("./data")
+        }
+        usMobilityJson = await helper.convertCsvToJsonStates(csvString)
+        const ws = fs.createWriteStream(localFilepath);
+        ws.write(JSON.stringify(usMobilityJson), (err) => {
+            if(err) console.error(err);
+            res.status(400).send({
+                success: false,
+                error: err.message
+            })
+        });
+    }
+    res.status(200).send(usMobilityJson);
+
+}
+
+
+
 module.exports = {
-    getQueryResults
+    getTxMobilityJson,
+    getUsMobilityJson
 }

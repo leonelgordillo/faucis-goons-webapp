@@ -13,7 +13,8 @@ function apiRouter() {
 
 
     // Database Controller Routes
-    router.get('/data/athena', dataController.getQueryResults)
+    router.get('/data/tx-mobility', dataController.getTxMobilityJson)
+    router.get('/data/us-mobility', dataController.getUsMobilityJson)
 
     // AWS Forcast Controller Routes
     router.get('/prediction/:county/:startDate/:endDate', predictionController.getForecast)
