@@ -93,7 +93,7 @@ export class UsBubbleMapComponent implements OnInit {
   // metric = "Transit", "Driving", "Walking", "Aggregate"
   metric: string = "driving";
   date;
-  dateMin = "2020-01-18";
+  dateMin = "2020-01-13";
   dateMax;
 
   linearScale;
@@ -148,18 +148,6 @@ export class UsBubbleMapComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadUsData();
-
-    setInterval(() => {
-      if (this.date < this.dateMax) {
-        this.sliderValue += 86400000;
-        this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
-        this.removeExistingMapFromParent();
-        this.updateMap();
-      } else {
-        this.date = this.dateMin;
-        this.sliderValue = this.sliderMin;
-      }
-    }, 250)
   }
 
   private removeExistingMapFromParent() {
@@ -173,9 +161,25 @@ export class UsBubbleMapComponent implements OnInit {
   loadUsData() {
     this.dataSubscription = this.dataService.getUsDataJson()
       .subscribe(
-        (res) =>{
+        (res) => {
           this.mobilityData = res.states;
-          this.updateMap();
+          setInterval(() => {
+
+            if (!this.date || !this.sliderValue) {
+              this.updateMap();
+              return;
+            } else if (this.date < this.dateMax) {
+              this.removeExistingMapFromParent();
+              this.sliderValue += 86400000;
+              this.date = formatDate(new Date(this.sliderValue), 'yyyy-MM-dd', 'en');
+            } else {
+              this.removeExistingMapFromParent();
+              this.date = this.dateMin;
+              this.sliderValue = this.sliderMin;
+            }
+            this.updateMap();
+
+          }, 250)
         },
         error => console.log(error),
       )
@@ -202,7 +206,7 @@ export class UsBubbleMapComponent implements OnInit {
 
     this.svg = d3.select(this.hostElement).append('svg')
       .attr("preserveAspectRatio", "xMinYMid")
-      .attr("viewBox", `0 0 ${this.width} ${this.height+75}`)
+      .attr("viewBox", `0 0 ${this.width} ${this.height + 75}`)
       .classed("svg-content", true)
       // .attr('width', this.width)
       // .attr('height', this.height + 75)
