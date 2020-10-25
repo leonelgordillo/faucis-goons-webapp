@@ -18,7 +18,7 @@ function apiRouter() {
 
     // AWS Forcast Controller Routes
     router.get('/prediction/:county/:startDate/:endDate', predictionController.getForecast)
-
+    router.get('/prediction/data-end-date', predictionController.getDatasetEndDate)
 
     return router;
 }

@@ -7,8 +7,8 @@ AWS.config.update({ region: 'us-east-2' });
 
 // Creating S3 Object
 const s3 = new AWS.S3;
-const datasetsBucketName = `${process.env.S3_DATASET}-${process.env.ENV}`;
-const assetsBucketName = `${process.env.S3_ASSETS}-${process.env.ENV}`;
+const datasetsBucketName = `${process.env.S3_DATASET}`;
+const assetsBucketName = `${process.env.S3_ASSETS}`;
 
 
 function downloadDatasetFile(filePath) {
