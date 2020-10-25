@@ -1,18 +1,16 @@
-// import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-
-import * as mobilitydata from "../../data/apple-mobility-us.json";
 import * as statesdata from "../../data/states.json";
 
 import { Component, OnInit, ElementRef, ViewEncapsulation, Input, SimpleChanges, OnChanges, ChangeDetectorRef, ViewChild, EventEmitter, Output } from '@angular/core';
-
-import { FormControl, FormGroup, FormArray } from '@angular/forms';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { Location, formatDate } from '@angular/common';
+import { formatDate } from '@angular/common';
 import { tap, catchError, finalize, filter, delay } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 
 import { MatSlider } from '@angular/material/slider';
 import { MatButtonToggleGroup } from '@angular/material/button-toggle';
+
+import { DataService } from "../../services/data.service";
+
 
 import * as d3 from 'd3';
 
@@ -28,6 +26,9 @@ export class UsBubbleMapComponent implements OnInit {
 
   @ViewChild('slider', { static: true }) slider: MatSlider;
   @ViewChild('group') buttonToggle: MatButtonToggleGroup;
+
+  dataSubscription;
+  mobilityData;
 
   hostElement; // Native element hosting the SVG container
   svg; // Top level SVG element
@@ -128,52 +129,17 @@ export class UsBubbleMapComponent implements OnInit {
     public router: Router,
     public route: ActivatedRoute,
     private changeDetectorRef: ChangeDetectorRef,
-    private location: Location
+    private dataService: DataService
   ) {
 
     this.hostElement = this.elRef.nativeElement;
-    this.location = location;
 
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
       this.route.params.subscribe(params => {
-        // this.selectedState = this.route.snapshot.params['selectedState'];
-        // if (this.route.snapshot.params['selectedType']) {
-        //   var button = this.typeButtons.find(({ text }) => text === this.type);
-        //   button.selected = false;
-        //   this.type = this.route.snapshot.params['selectedType'];
-        //   var button = this.typeButtons.find(({ text }) => text === this.type);
-        //   button.selected = true;
-        // }
-
-        // if (this.route.snapshot.params['selectedScale']) {
-        //   this.scale = this.route.snapshot.params['selectedScale'];
-        // }
-
-        // if (this.route.snapshot.params['selectedTab']) {
-        //   this.tab = this.route.snapshot.params['selectedTab'];
-        // }
-
-        // if (this.route.snapshot.params['selectedMetric']) {
-        //   this.metric = this.route.snapshot.params['selectedMetric'];
-        // }
-
-        // if (this.route.snapshot.params['selectedDate']) {
-        //   this.date = this.route.snapshot.params['selectedDate'];
-        //   var value = new Date(this.date);
-        //   value.setHours(23, 59, 59, 999);
-        //   this.value = value.getTime();
-        //   this.slider.value = value.getTime();
-        // }
-        // else {
-        //   this.date = formatDate(new Date().setDate(new Date().getDate() - 1), 'yyyy-MM-dd', 'en');
-        // }
-
-        // if (this.router.url.indexOf('/counties') != -1) {
         if (this.router.url.indexOf('/') != -1) {
           this.removeExistingMapFromParent();
-          // this.updateMap(true);
         }
 
       })
@@ -181,7 +147,7 @@ export class UsBubbleMapComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.updateMap();
+    this.loadUsData();
 
     setInterval(() => {
       if (this.date < this.dateMax) {
@@ -202,6 +168,17 @@ export class UsBubbleMapComponent implements OnInit {
     //     d3.select('svg').remove();
     // That will clear all other SVG elements in the DOM
     d3.select(this.hostElement).select('svg').remove();
+  }
+
+  loadUsData() {
+    this.dataSubscription = this.dataService.getUsDataJson()
+      .subscribe(
+        (res) =>{
+          this.mobilityData = res.states;
+          this.updateMap();
+        },
+        error => console.log(error),
+      )
   }
 
   updateMap() {
@@ -247,8 +224,7 @@ export class UsBubbleMapComponent implements OnInit {
 
     this.g = this.svg.append('g');
 
-    // that.covid = coviddata.counties;
-    that.covid = mobilitydata.states;
+    that.covid = this.mobilityData;
 
     that.dateMax = d3.max(that.covid, function (d: any) {
       return d.date

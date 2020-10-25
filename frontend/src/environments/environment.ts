@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: "http://fgoons-hackathon-dev.us-east-2.elasticbeanstalk.com/api"
+  api: "http://localhost:8080/api"
 };
 
 /*

@@ -38,7 +38,6 @@ const getTxMobilityJson = async (req, res) => {
 
         });
     }
-    console.log(txMobilityJson);
     res.status(200).send(txMobilityJson);
 
 
@@ -65,11 +64,13 @@ const getUsMobilityJson = async (req, res) => {
         usMobilityJson = await helper.convertCsvToJsonStates(csvString)
         const ws = fs.createWriteStream(localFilepath);
         ws.write(JSON.stringify(usMobilityJson), (err) => {
-            if(err) console.error(err);
-            res.status(400).send({
-                success: false,
-                error: err.message
-            })
+            if(err) {
+                console.error(err)
+                res.status(400).send({
+                    success: false,
+                    error: err.message
+                })
+            }
         });
     }
     res.status(200).send(usMobilityJson);

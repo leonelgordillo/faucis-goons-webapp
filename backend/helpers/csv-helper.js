@@ -39,7 +39,8 @@ function convertCsvToJsonCounties(csvString) {
                 var newCountyObj = {}
                 newCountyObj = county
 
-                newCountyObj['fips'] = countyFips[`${county.region}`]
+                newCountyObj['fips'] = countyFips[`${county.region}`]['fips']
+                newCountyObj['state'] = countyFips[`${county.region}`]['state']
                 delete newCountyObj["geo_type"];
                 delete newCountyObj["alternative_name"]
                 delete newCountyObj["sub-region"]
