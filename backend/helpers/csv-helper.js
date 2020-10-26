@@ -6,7 +6,6 @@ function convertCsvToJsonStates(csvString) {
 
     return csvToJson().fromString(csvString)
         .then(states => {
-            console.log(states)
 
             const newStates = states.map((state) => {
 
@@ -79,7 +78,6 @@ function addFipsToData(jsonObj) {
         countyFips[`${element.properties.name} County`] = element.properties.fips.toString();
     });
 
-    console.log(countyFips);
 
     const ws = fs.createWriteStream("apple-mobility-tx-counties-with-fips-with-all.json")
 
@@ -90,8 +88,6 @@ function addFipsToData(jsonObj) {
         countyWithFips['state'] = 'Texas'
         return countyWithFips;
     })
-
-    console.log(tx_mobility_with_fips);
 
     let newCountyObj = { counties: tx_mobility_with_fips };
     ws.write(JSON.stringify(newCountyObj))

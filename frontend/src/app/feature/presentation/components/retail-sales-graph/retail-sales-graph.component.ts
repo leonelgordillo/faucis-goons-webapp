@@ -40,7 +40,7 @@ export class RetailSalesGraph implements OnInit {
         position: 'left',
         scaleLabel: {
           display: true,
-          labelString: 'Retail Sales'
+          labelString: 'Retail Sales ($, in millions)'
         }
       }, {
         id: 'Mobility',

@@ -22,5 +22,11 @@
 
 .bubble-map {
     background-color: rgba(58, 122, 168, 0.4);
-    text-align: center;
+
+}
+
+.us-map-component {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
 }

@@ -10,7 +10,6 @@ const s3 = new AWS.S3;
 const datasetsBucketName = `${process.env.S3_DATASET}`;
 const assetsBucketName = `${process.env.S3_ASSETS}`;
 
-
 function downloadDatasetFile(filePath) {
     const params = {
         Bucket: datasetsBucketName,

@@ -26,7 +26,7 @@ export class PredictionTableComponent implements OnInit {
 
   ];
 
-  public lineChartLabels: Label[] = ['>5', '5-13', '14-17', '18-24', '24-34', '35-44', '45-54', '55-64', '65+'];
+  public lineChartLabels: Label[] = ['<5', '5-13', '14-17', '18-24', '24-34', '35-44', '45-54', '55-64', '65+'];
   public lineChartOptions = {
     responsive: true,
     legend: {

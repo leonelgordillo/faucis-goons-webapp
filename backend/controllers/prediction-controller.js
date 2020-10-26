@@ -13,9 +13,8 @@ const getDatasetEndDate = async (req, res) => {
                 dataEndDate: date
             })
         })
-    
-
 }
+
 
 const getForecast = async (req, res) => {
 
@@ -57,7 +56,10 @@ const getForecast = async (req, res) => {
 
     predictionService.getDateForecast(startDate, endDate, county)
         .then((data) => {
-            res.status(200).send(data.Forecast)
+            res.status(200).send({
+                forecast: data.data.Forecast,
+                avgMobility: data.avgMobility
+            })
         })
         .catch((err) => {
             console.log(err);
@@ -70,5 +72,5 @@ const getForecast = async (req, res) => {
 
 module.exports = {
     getForecast,
-    getDatasetEndDate
+    getDatasetEndDate,
 }

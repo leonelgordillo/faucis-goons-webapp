@@ -10,6 +10,12 @@ export class PredictionService {
 
   constructor(private httpClient: HttpClient) { }
 
+  getDataEndDate(): Observable<any> {
+
+    let uri = `${environment.api}/prediction/data-end-date`
+
+    return this.httpClient.get<Object>(encodeURI(uri))
+  }
 
   getCountyMobilityPrediction(county: string, startDate: Date, endDate: Date): Observable<any> {
 

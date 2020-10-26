@@ -54,7 +54,6 @@ const getDataset = async (req, res) => {
 
     if (datasetFile) {
         let datasetJson = JSON.parse(datasetFile.toString('utf-8'));
-        console.log(datasetJson);
         res.status(200).json(datasetJson);
     }
     else {

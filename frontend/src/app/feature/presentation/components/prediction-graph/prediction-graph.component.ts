@@ -16,13 +16,18 @@ export class PredictionGraphComponent implements OnInit {
 
   counties = countyList;
   public selectedCounty;
-  startMinDate = new Date(2020, 8, 27);
-  startMaxDate = new Date(2020, 9, 5);
-  endMinDate = new Date(2020, 8, 27);
-  endMaxDate = new Date(2020, 9, 5);
+  // startMinDate = new Date(2020, 8, 27);
+  // startMaxDate = new Date(2020, 9, 5);
+  // endMinDate = new Date(2020, 8, 27);
+  // endMaxDate = new Date(2020, 9, 5);
+  startMinDate;
+  startMaxDate;
+  endMinDate;
+  endMaxDate;
   serializedStartDate = new FormControl();
   serializedEndDate = new FormControl(); 
   displayedCounty;
+  displayedRanking;
 
   p10: any
   p50: any
@@ -75,6 +80,22 @@ export class PredictionGraphComponent implements OnInit {
               private dataService: DataService) { }
 
   ngOnInit(): void {
+
+    this.predictionService.getDataEndDate().subscribe((res) => {
+
+      let date = res.dataEndDate.replace('Z', '')
+      let tempDate = new Date(date);
+      let tempStartMinDate = new Date(tempDate.getTime() + (1*24*3600000));
+      let tempStartMaxDate = new Date(tempStartMinDate.getTime() + (12*24*3600000))
+      let tempEndMinDate = new Date(tempStartMinDate.getTime() + (1*24*3600000))
+      let tempEndMaxDate = new Date(tempStartMaxDate.getTime() + (1*24*3600000))
+
+
+      this.startMinDate = tempStartMinDate;
+      this.startMaxDate = tempStartMaxDate;
+      this.endMinDate = tempEndMinDate;
+      this.endMaxDate = tempEndMaxDate;
+    })
   }
 
   updateEndMin(event: MatDatepickerInputEvent<Date>): void {
@@ -104,13 +125,16 @@ export class PredictionGraphComponent implements OnInit {
         this.predictionService.getCountyMobilityPrediction(this.selectedCounty, this.serializedStartDate.value, this.serializedEndDate.value)
           .subscribe((data) => {
 
+            let predictions = data.forecast.Predictions
+
             this.displayedCounty = this.selectedCounty + ", TX"
+            this.displayedRanking = `- ${data.avgMobility.ranking}th Highest`
 
             this.dataService.changeCounty(this.selectedCounty);
 
-            this.p10 = data.Predictions.p10
-            this.p50 = data.Predictions.p50
-            this.p90 = data.Predictions.p90
+            this.p10 = predictions.p10
+            this.p50 = predictions.p50
+            this.p90 = predictions.p90
 
             this.lineChartData[0].data = this.p10.map((v) => v.Value);
             this.lineChartData[1].data = this.p50.map((v) => v.Value);
