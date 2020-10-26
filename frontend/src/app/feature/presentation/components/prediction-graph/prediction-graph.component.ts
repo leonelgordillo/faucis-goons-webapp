@@ -16,10 +16,6 @@ export class PredictionGraphComponent implements OnInit {
 
   counties = countyList;
   public selectedCounty;
-  // startMinDate = new Date(2020, 8, 27);
-  // startMaxDate = new Date(2020, 9, 5);
-  // endMinDate = new Date(2020, 8, 27);
-  // endMaxDate = new Date(2020, 9, 5);
   startMinDate;
   startMaxDate;
   endMinDate;
@@ -60,15 +56,12 @@ export class PredictionGraphComponent implements OnInit {
   public lineChartColors: Color[] = [
     {
       borderColor: 'darkseagreen',
-      // backgroundColor: 'rgba(255,0,0,0.3)',
     },
     {
       borderColor: 'maroon',
-      // backgroundColor: 'darkseagreen',
     },
     {
       borderColor: 'orange',
-      // backgroundColor: 'white',
     },
   ];
   public lineChartLegend = true;
@@ -116,6 +109,11 @@ export class PredictionGraphComponent implements OnInit {
     return;
   }
 
+  nth(n){
+    return["st","nd","rd"][((n+90)%100-10)%10-1]||"th"
+  }
+
+
   queryForecaster(): void {
 
     if (this.serializedEndDate && this.serializedStartDate && this.selectedCounty) {
@@ -126,9 +124,11 @@ export class PredictionGraphComponent implements OnInit {
           .subscribe((data) => {
 
             let predictions = data.forecast.Predictions
+            let ranking = data.avgMobility.ranking
+            let ordinalRanking = this.nth(ranking)
 
             this.displayedCounty = this.selectedCounty + ", TX"
-            this.displayedRanking = `- ${data.avgMobility.ranking}th Highest`
+            this.displayedRanking = `- ${ranking}${ordinalRanking} Highest`
 
             this.dataService.changeCounty(this.selectedCounty);
 

@@ -1,4 +1,9 @@
-<div class="us-map-view">
+<div *ngIf="loading" class="svg-container">
+    <svg class="spinner">
+        <circle cx="20" cy="20" r="18"></circle>
+    </svg>
+</div>
+<div *ngIf="!loading" class="us-map-view">
     <div id="container" class="svg-container">
         <svg viewBox="0 0 300 300">
         </svg>

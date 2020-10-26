@@ -1,7 +1,9 @@
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-6 filter-elements">
+            <div *ngIf="!loading" class="col-md-6 filter-elements">
                     <span style="padding-bottom:10px">Mobility Type</span>
                     <div class="mobility-buttons">
                         <mat-button-toggle-group #group="matButtonToggleGroup" (change)="metricChange(false)"
@@ -35,7 +37,13 @@
                     </div>
 
                     </div>
-
+            </div>
+            <div>
+                <div *ngIf="loading" class="svg-holder">
+                    <svg class="spinner">
+                        <circle cx="20" cy="20" r="18"></circle>
+                    </svg>
+                </div>
             </div>
             <svg>
             </svg>

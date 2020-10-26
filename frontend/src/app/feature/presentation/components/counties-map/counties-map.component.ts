@@ -32,6 +32,7 @@ export class CountiesMapComponent implements OnInit {
 
   dataSubscription;
   mobilityData;
+  loading = true;
 
 
   hostElement; // Native element hosting the SVG container
@@ -681,6 +682,9 @@ export class CountiesMapComponent implements OnInit {
       .style("font-size", 14)
       .style("font-weight", "bold")
       .text(`Texas Mobility by ${this.metric} during Covid-19 Pandemic`)
+
+
+      this.loading = false;
   }
 
   getMetrics(rangeValue) {

@@ -27,6 +27,8 @@ export class UsBubbleMapComponent implements OnInit {
   @ViewChild('slider', { static: true }) slider: MatSlider;
   @ViewChild('group') buttonToggle: MatButtonToggleGroup;
 
+  loading = true;
+
   dataSubscription;
   mobilityData;
 
@@ -177,9 +179,10 @@ export class UsBubbleMapComponent implements OnInit {
               this.date = this.dateMin;
               this.sliderValue = this.sliderMin;
             }
+            this.removeExistingMapFromParent();
             this.updateMap();
 
-          }, 250)
+          }, 250);
         },
         error => console.log(error),
       )
@@ -472,27 +475,27 @@ export class UsBubbleMapComponent implements OnInit {
         }
       })
 
-      .on('mouseover', function (d) {
-        that.tooltip.transition()
-          .duration(200)
-          .style('opacity', .9);
+      // .on('mouseover', function (d) {
+      //   that.tooltip.transition()
+      //     .duration(200)
+      //     .style('opacity', .9);
 
-        that.tooltip.html(d.name + `<br/><b>TOTAL ` + that.metric + `:</b> ` + that.formatDecimal(d.metric))
-          .style('left', (d3.event.pageX) + 'px')
-          .style('top', (d3.event.pageY) + 'px')
-        // .style('left', (event.pageX) + 'px')
-        // .style('top', (event.pageY) + 'px')
+      //   that.tooltip.html(d.name + `<br/><b>TOTAL ` + that.metric + `:</b> ` + that.formatDecimal(d.metric))
+      //     .style('left', (d3.event.pageX) + 'px')
+      //     .style('top', (d3.event.pageY) + 'px')
+      //   // .style('left', (event.pageX) + 'px')
+      //   // .style('top', (event.pageY) + 'px')
 
-        that.changeDetectorRef.detectChanges();
-      })
+      //   that.changeDetectorRef.detectChanges();
+      // })
 
-      .on('mouseout', function (d) {
-        that.tooltip.transition()
-          .duration(300)
-          .style('opacity', 0);
+      // .on('mouseout', function (d) {
+      //   that.tooltip.transition()
+      //     .duration(300)
+      //     .style('opacity', 0);
 
-        that.changeDetectorRef.detectChanges();
-      });
+      //   that.changeDetectorRef.detectChanges();
+      // });
 
     if (that.type == "Bubble") {
       that.g
@@ -528,26 +531,26 @@ export class UsBubbleMapComponent implements OnInit {
         // .on("click", function (d) {
         //   that.clicked(d, that, this);
         // })
-        .on('mouseover', function (d) {
-          that.tooltip.transition()
-            .duration(200)
-            .style('opacity', .9);
+        // .on('mouseover', function (d) {
+        //   that.tooltip.transition()
+        //     .duration(200)
+        //     .style('opacity', .9);
 
-          that.tooltip.html(d.name + '<br/><b>Total ' + this.metric + ':</b> ' + that.formatDecimal(d.metric))
-            .style('left', (d3.event.pageX) + 'px')
-            .style('top', (d3.event.pageY) + 'px')
-          // .style('left', (event.pageX) + 'px')
-          // .style('top', (event.pageY) + 'px')
+        //   that.tooltip.html(d.name + '<br/><b>Total ' + this.metric + ':</b> ' + that.formatDecimal(d.metric))
+        //     .style('left', (d3.event.pageX) + 'px')
+        //     .style('top', (d3.event.pageY) + 'px')
+        //   // .style('left', (event.pageX) + 'px')
+        //   // .style('top', (event.pageY) + 'px')
 
-          that.changeDetectorRef.detectChanges();;
-        })
-        .on('mouseout', function (d) {
-          that.tooltip.transition()
-            .duration(300)
-            .style('opacity', 0);
+        //   that.changeDetectorRef.detectChanges();;
+        // })
+        // .on('mouseout', function (d) {
+        //   that.tooltip.transition()
+        //     .duration(300)
+        //     .style('opacity', 0);
 
-          that.changeDetectorRef.detectChanges();;
-        });
+        //   that.changeDetectorRef.detectChanges();;
+        // });
     }
 
     that.legendContainer = that.svg.append('rect')
@@ -656,7 +659,10 @@ export class UsBubbleMapComponent implements OnInit {
       .style("font-size", 14)
       .style("font-weight", "bold")
       .text(`US Mobility by ${this.metric} during Covid-19 Pandemic`)
-  }
+  
+      this.loading = false;
+
+    }
 
   getMetrics(rangeValue) {
     switch (this.scale) {
