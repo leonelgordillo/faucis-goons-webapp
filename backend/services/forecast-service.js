@@ -1,5 +1,5 @@
 require('dotenv');
-const forecastExport = require('../data/forecast-export-10-25-20.json');
+const forecastExport = require('../data/forecast-export-11-08-20.json');
 const AWS = require('aws-sdk')
 
 

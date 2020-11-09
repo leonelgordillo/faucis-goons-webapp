@@ -79,7 +79,7 @@ export class PredictionGraphComponent implements OnInit {
       let date = res.dataEndDate.replace('Z', '')
       let tempDate = new Date(date);
       let tempStartMinDate = new Date(tempDate.getTime() + (1*24*3600000));
-      let tempStartMaxDate = new Date(tempStartMinDate.getTime() + (12*24*3600000))
+      let tempStartMaxDate = new Date(tempStartMinDate.getTime() + (11*24*3600000))
       let tempEndMinDate = new Date(tempStartMinDate.getTime() + (1*24*3600000))
       let tempEndMaxDate = new Date(tempStartMaxDate.getTime() + (1*24*3600000))
 
